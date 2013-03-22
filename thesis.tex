@@ -1,0 +1,227 @@
+\documentclass{thesisclass}
+
+%% -------------------------------
+%% |    IM Thesis Template       |
+%% -------------------------------
+%% Additions by: David Dauer, IM, 2011
+%% dauer@iism.uni-karlsruhe.de
+
+%% Notes:
+%% Language switch after \begin{document}
+
+% Based on thesisclass.cls of Timo Rohrberg, 2009
+% ----------------------------------------------------------------
+% Thesis - Main document
+% ----------------------------------------------------------------
+
+%% ---------------------------------
+%% |      Additional packages      |
+%% ---------------------------------
+%% 
+
+\usepackage{graphicx}
+%http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Graphics_storage
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{./figures/}} %Use curly braces for each path to add and don't
+% forget trailing slash '/'
+% \usepackage{epstopdf} %Nice to automatically convert eps figures to pdf
+% format  (from inkscape, etc)
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{bigstrut}
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{framed}
+\usepackage{color} 
+\usepackage{textcomp}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage{multicol, multirow}
+\usepackage{amsmath}
+\usepackage[ruled,vlined,algo2e, resetcount]{algorithm2e}
+\usepackage[printonlyused, nohyperlinks]{acronym}
+\usepackage{colortbl}% http://ctan.org/pkg/xcolor
+\definecolor{grey}{rgb}{0.95,0.95,0.95}
+\definecolor{darkgrey}{rgb}{0.85,0.85,0.85}
+\newcommand{\done}{\cellcolor{grey}done}  %{0.9}
+\newcommand{\hcyan}[1]{{\color{grey} #1}}
+\setlength{\intextsep}{2pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{0pt plus 0.0pt minus 6.0pt}
+%% ---------------------------------
+%% | Information about the thesis  |
+%% ---------------------------------
+
+\newcommand{\mytype}{\iflanguage{english}{Bachelor Thesis}{Seminararbeit}} % (Seminar|Bachelor|Master) Thesis
+\newcommand{\myname}{Christoph Großbaier}
+\newcommand{\mytitle}{\iflanguage{english}{Experimental Analysis of Smart Meter Information }{Titel der Arbeit}}
+\newcommand{\myinstitute}{\iflanguage{english}
+{Institute of Information Systems and Management (IISM) \\
+Information \& Market Engineering}
+{Institut für Informationswirtschaft und -management (IISM) \\
+Information \& Market Engineering}}
+
+\newcommand{\reviewerone}{Prof. Dr. rer. pol. Christof Weinhardt}
+\newcommand{\advisor}{M.Sc. Anders Dalén}
+
+
+\newcommand{\timestart}{XX. Monat 20XX}
+\newcommand{\timeend}{XX. Monat 20XX}
+\newcommand{\submissiontime}{DD. MM. 20XX}
+
+%% -------------------------------
+%% |  Information for PDF file   |
+%% -------------------------------
+%% IM: Auto-Fill this information
+\hypersetup{
+ pdfauthor={\myname},
+ pdftitle={\mytitle},
+ pdfsubject={\mytype},
+ pdfkeywords={\mytype}
+}
+
+%% ---------------------------------
+%% | ToDo Marker - only for draft! |
+%% ---------------------------------
+% Remove this section for final version!
+\setlength{\marginparwidth}{20mm}
+
+\newcommand{\margtodo}
+{\marginpar{\textbf{\textcolor{red}{ToDo}}}{}}
+
+\newcommand{\todo}[1]
+{{\textbf{\textcolor{red}{(\margtodo{}#1)}}}{}}
+
+
+%% --------------------------------
+%% | Old Marker - only for draft! |
+%% --------------------------------
+% Remove this section for final version!
+\newenvironment{deprecated}
+{\begin{color}{gray}}
+{\end{color}}
+
+
+%% --------------------------------
+%% | Settings for word separation |
+%% --------------------------------
+% Help for separation:
+% In german package the following hints are additionally available:
+% "- = Additional separation
+% "| = Suppress ligation and possible separation (e.g. Schaf"|fell)
+% "~ = Hyphenation without separation (e.g. bergauf und "~ab)
+% "= = Hyphenation with separation before and after
+% "" = Separation without a hyphenation (e.g. und/""oder)
+
+% Describe separation hints here:
+\hyphenation{
+% Pro-to-koll-in-stan-zen
+% Ma-na-ge-ment  Netz-werk-ele-men-ten
+% Netz-werk Netz-werk-re-ser-vie-rung
+% Netz-werk-adap-ter Fein-ju-stier-ung
+% Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+% Kon-troll-in-stanz
+}
+
+
+%% ------------------------
+%% |    Including files   |
+%% ------------------------
+% Only files listed here will be included!
+% Userful command for partially translating the document (for bug-fixing e.g.)
+\includeonly{%
+titlepage,
+text/introduction,
+text/content,
+text/experiment,
+text/evaluation,
+text/conclusion,
+text/declaration,
+text/appendix
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here, main documents begins %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Comment the following line out for German text
+\selectlanguage{english}
+
+\frontmatter
+\pagenumbering{roman}
+\include{titlepage}
+% IM Style: No additional blank page
+% \blankpage
+
+
+%% -------------------
+%% |   Directories   |
+%% -------------------
+\tableofcontents
+\listoftables
+\listoffigures
+\chapter*{List of Acronyms}
+\begin{acronym} [JSON]
+ \acro {HIT} {Human Intelligence Task}
+ \acro {AMT} {Amazon Mechanical Turk}
+ \acro {DPA} {Dynamic Programming Algorithm}
+ \acro {GA} {Greedy Algorithm}
+ \acro {JSON} {JavaScript Object Notation}
+ \acro {CSV} {Comma-Separated Values}
+ \acro {GUI} {Graphical User Interface}
+ \acro {GLM} {Generalized Linear Repeated Measures Model}
+ \acro {NP} {Non-Parametric Statistical Tests}
+ \acro {LMM} {Linear Mixed Model}
+\end{acronym}
+% IM Style: No additional blank page
+% \blankpage
+
+
+%% -----------------
+%% |   Main part   |
+%% -----------------
+\mainmatter
+\pagenumbering{arabic}
+\include{text/introduction}
+\include{text/content}
+\include{text/experiment}
+\include{text/evaluation}
+\include{text/conclusion}
+\include{text/declaration}
+
+
+%% ----------------
+%% |   Appendix   |
+%% ----------------
+% IM Style: No additional blank page
+%\cleardoublepage
+
+\input{text/appendix}
+
+
+%% --------------------
+%% |   Bibliography   |
+%% --------------------
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+
+% IM Style
+\iflanguage{english}
+{\bibliographystyle{chicago}}	% english style
+{\bibliographystyle{chicagode}}	% german style
+
+% Informatik-Style
+%\iflanguage{english}
+%{\bibliographystyle{IEEEtranSA}}	% english style
+%{\bibliographystyle{babalpha-fl}}	% german style
+												  
+% Use IEEEtran for numeric references
+%\bibliographystyle{IEEEtranSA})
+
+\bibliography{thesis}
+
+
+\end{document}
