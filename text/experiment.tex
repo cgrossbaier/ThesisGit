@@ -102,16 +102,16 @@ R = Matrix (100 x 694), each element with value 0\;
 
 
 \paragraph{Comparability of the problems' difficulty}
-To ensure the value of the statistical analysis across usergroups and rounds, the underlying knapsack problems are designed to be sufficiently similar. For this purpose, a benchmark is introduced to compare the difficulty of knapsack problems and to design equally difficult problems.\\
+To ensure the value of the statistical analysis across treatments and rounds, the underlying knapsack problems are designed to be sufficiently similar. For this purpose, a benchmark is introduced to compare the difficulty of knapsack problems and to design equally difficult problems.\\
 The \textit{benchmark} is computed as the relative difference between the computed solution by the \ac{DPA} and the \ac{GA}. The greater the benchmark, the harder the problem.
 The setup algorithm runs 100 times to ensure a sufficiently high benchmark.
 \begin{equation}
 benchmark = \Big(\dfrac{\text{\ac{DPA} solution}}{\text{\ac{GA} solution}} -1\Big) * 100\%
 \end{equation}
 
-\subparagraph{Comparability across usergroups and rounds}
+\subparagraph{Comparability across treatments and rounds}
 Four different knapsack problems are created, one for each round plus the Trial round. To ensure the \textbf{comparability across rounds}, the benchmark is used to identify hard problems. For each round, the benchmark is calculated and the values are checked to be sufficiently similar.\\ 
-In order to compare the performance of participants in \textbf{different usergroups}, the underlying knapsack problems are the same for each individual round.
+In order to compare the performance of participants in \textbf{different treatments}, the underlying knapsack problems are the same for each individual round.
  \begin{figure}[htp] % Colour Scheme Benefit
 \begin{center}
   \includegraphics[height = 0.4\textwidth]{colourSchemeBenefit.pdf}
@@ -119,7 +119,7 @@ In order to compare the performance of participants in \textbf{different usergro
 \label{fig:colourSchemeBenefit}
 \end{center}
 \end{figure}
-Consequently, the distribution of the benefits and weights of each box is the same, the only difference is the assignation of colours. In the 2-colour usergroup, one colour covers a wide range of benefit values, whereas in the 15-colour setup, one colour represents a smaller range of colours (refer to Figure \ref{fig:colourSchemeBenefit}).  Consequently, there are two opposing trends when increasing the number of colours. The more colours there are, the more alternatives there are to choose from, so the complexity of the task might increase. In contrast to that, the range of the benefit within one colour gets smaller, so participants can better distinguish between different benefit values.
+Consequently, the distribution of the benefits and weights of each box is the same, the only difference is the assignation of colours. In the 2-colour treatment, one colour covers a wide range of benefit values, whereas in the 15-colour setup, one colour represents a smaller range of colours (refer to Figure \ref{fig:colourSchemeBenefit}).  Consequently, there are two opposing trends when increasing the number of colours. The more colours there are, the more alternatives there are to choose from, so the complexity of the task might increase. In contrast to that, the range of the benefit within one colour gets smaller, so participants can better distinguish between different benefit values.
 
 %% ===========================
 \subsection{Setup}
@@ -127,7 +127,7 @@ Consequently, the distribution of the benefits and weights of each box is the sa
 %% ===========================
 
 The setup of the game\footnote{For the algorithm, refer to Appendix \ref{Appendix-Algorithm}.} is prepared before uploading the game. 
-Each usergroup is assigned 4 rounds with 100 boxes per round. The first round is the Trial round\footnote{No data was conducted from the Trial round.} while the other 3 rounds are shown during the actual game.
+Each treatment is assigned 4 rounds with 100 boxes per round. The first round is the Trial round\footnote{No data was conducted from the Trial round.} while the other 3 rounds are shown during the actual game.
 Each box is randomly\footnote{The used random function returns a randomly determined value in a given range. The return values are uniformly distributed (\href{http://hg.python.org/cpython/file/2.7/Lib/random.py}{Source code}).} assigned a weight in the range of 20 to 80 units. This value represents the width of the boxes in pixel in the game.
 
 
@@ -140,7 +140,7 @@ The items the participant can choose from are modelled as boxes. The width of ea
 The colour of the box represent the benefit.
 
 \paragraph{Colour scale}
-The colour scale used for each usergroup aims to provide an intuitive range of colours with easily distinguishable colours. A traffic light colour scale was first favoured  since it is a well-known and intuitive colour pattern. Trial runs, however, showed that participants had problems distinguishing the colours when they were dealing with 11 or 15 colours. Especially green boxes were hard to differentiate for test participants. Furthermore, a colour-blindness test would have been necessary to identify colour-blind users.
+The colour scale used for each treatment aims to provide an intuitive range of colours with easily distinguishable colours. A traffic light colour scale was first favoured  since it is a well-known and intuitive colour pattern. Trial runs, however, showed that participants had problems distinguishing the colours when they were dealing with 11 or 15 colours. Especially green boxes were hard to differentiate for test participants. Furthermore, a colour-blindness test would have been necessary to identify colour-blind users.
 As a result, we use a grey scale as shown in Figure \ref{fig:colourScheme}. This colour scale is both intuitive and accessible to colour-blind users and the grey levels are easy to distinguish.\\
 \begin{figure}[htp] % Colour Scheme
 \begin{center}
@@ -150,13 +150,13 @@ As a result, we use a grey scale as shown in Figure \ref{fig:colourScheme}. This
 \end{center}
 \end{figure} 
 
-The colour scale is presented individually per usergroup to the participant on the left of the interface (Figure \ref{fig:Interface}).
+The colour scale is presented individually per treatment to the participant on the left of the interface (Figure \ref{fig:Interface}).
 Participants can choose from 100 boxes for each round they play. The large number of boxes ensures an information overload, but still enables participants to achieve a satisfying result.
 The knapsack is illustrated as a wide rectangle and is limited by its width. Boxes can be added to and removed from the knapsack by clicking on them. In the cases that a selected box doesn't fit into the knapsack because it exceeds its capacity, the knapsack will shake and appear in red, not allowing the selected box to enter the knapsack. 
  \begin{figure}[htp] % Interface
 \begin{center} %Exemplary interface
   \includegraphics[height = 0.5\textwidth]{Interface4.pdf}
-\caption{Exemplary interface (Usergroup 5, Trial 1 )}
+\caption{Exemplary interface (treatment 5, Trial 1 )}
 \end{center}
 \label{fig:Interface}
 \end{figure} 
@@ -224,7 +224,7 @@ Researchers can act as employers on the \ac{AMT} website and offer experiments a
 \paragraph{Limitations of \acl{AMT}}
 Although the \ac{AMT} offers an enormous potential for the purposes of our study, there are several limitations to keep in mind.
 
-First, in contrast to experiments conducted in a lab environment, \ac{AMT} experiments have limited control over what kind of individuals take part in the experiment. In particular, the lack of control over \textit{non-random attrition} \citep{Rand2012} defines a limitation for our experiment in terms of the participant structure. Individuals who are overwhelmed with the complexity of the task might drop out early, do not finish the \ac{HIT} and are not included in the statistical analysis. This can have an impact on the pool of participants among different usergroups and can therefore limit the ability to compare results. As a result, we have tried to make the description of the game and the game itself as simple and intuitive as possible in order to reduce the risk of early drop-outs. Trial runs previous to offering the \ac{HIT} revealed that using the Trial round helped individuals to get a better understanding of the game and the task.
+First, in contrast to experiments conducted in a lab environment, \ac{AMT} experiments have limited control over what kind of individuals take part in the experiment. In particular, the lack of control over \textit{non-random attrition} \citep{Rand2012} defines a limitation for our experiment in terms of the participant structure. Individuals who are overwhelmed with the complexity of the task might drop out early, do not finish the \ac{HIT} and are not included in the statistical analysis. This can have an impact on the pool of participants among different treatments and can therefore limit the ability to compare results. As a result, we have tried to make the description of the game and the game itself as simple and intuitive as possible in order to reduce the risk of early drop-outs. Trial runs previous to offering the \ac{HIT} revealed that using the Trial round helped individuals to get a better understanding of the game and the task.
 
 Second, researchers cannot be sure as to what participants are actually doing during the experiment on the \ac{AMT} platform. This fact especially reduces the benefit to cognitive load experiments similar to our experiment since our experiment necessitates the full attention of individuals. We try to tackle this issue by setting a time restriction per round so individuals have an incentive to stay on task. Moreover, we log the time individuals spend on different parts of the experiment and evaluate the participant's actions by analysing the recorded data in order to fully understand each individual's actions. Last, we take this limitation into consideration in the choice of a statistical model.
 
@@ -238,7 +238,7 @@ After summarizing the benefits and limitations of the \ac{AMT} platform, we conc
 \cite{Rand2012} indicates that in order to conduct an experiment using a game environment on \ac{AMT}, researchers must provide participants with instructions, making sure they understand the rules of the game. Next, researchers must process the data and pay the participants according to their earnings. We follow this setup for our experiment (refer to Figure \ref{fig:Enfolab}).
 
 Once the \ac{AMT} user has decided to complete the \ac{HIT}, he or she is redirected to an external web page on which the experiment is run.
-When arriving at the page, the program creates an individual user who is randomly assigned to one usergroup and an individual code is generated. 
+When arriving at the page, the program creates an individual user who is randomly assigned to one treatment and an individual code is generated. 
 Additionally, a time stamp is saved in order to track the time a user will spend on different stages throughout the experiment.
 
 \afterpage{
@@ -279,7 +279,7 @@ At the end, the data on the server is compared to the \ac{HIT}s completed, and t
 \label{ch:Experiment:sec:DataacquisitionDescriptives}
 %% ===========================
 The 1\textsuperscript{st} Trial was offered on \ac{AMT} between the 20\textsuperscript{th} and the 21\textsuperscript{th} of February 2013 and reached 200 participants, the 2\textsuperscript{nd} Trial with the same amount of participants ran between the 5\textsuperscript{th} and the 8\textsuperscript{th} of March 2013. A total of 31.291 actions were recorded on the server.\\
-Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{R}, the recorded data is cumulated on a per round basis for the purposes of this study. For each round per user, a data point is created that includes information on the user, usergroup and corresponding number of colours, round, first result, best result, \textit{FinalResult} and finally the time for each result.
+Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{R}, the recorded data is cumulated on a per round basis for the purposes of this study. For each round per user, a data point is created that includes information on the user, treatment and corresponding number of colours, round, first result, best result, \textit{FinalResult} and finally the time for each result.
  \begin{figure}[htp] % Interface 1
 \begin{center} %Exemplary interface
   \includegraphics[height = 0.5\textwidth]{User_Waterfall.pdf}
@@ -325,23 +325,23 @@ Only a small number of participants gave feedback on areas of improvement, inclu
 
 
 %% ===============================
-\subsection{Descriptives}
+\section{Data Descriptives}
 \label{ch:Experiment:sec:DataacquisitionDescriptives:subsec:DescriptiveStatistics}
 %% ===============================
 
-This section aims to provide a descriptive overview of the unfiltered data. First, the usergroup statistics are introduced, second the descriptive results from the game are analysed and third the answers from the participants are examined.
+This section aims to provide a descriptive overview of the unfiltered data. First, the treatment statistics are introduced, second the descriptive results from the game are analysed and third the answers from the participants are examined.
 %% ===============================
-\paragraph{Usergroups and payout}
-\label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Distributionofusergroups}
+\paragraph{treatments and payout}
+\label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Distributionoftreatments}
 
-The participants were randomly and uniformly assigned to one usergroup once they directed to the welcome page. The low share of usergroup 1 is related to the fact that the usergroup was added in Trial 2 (Table \ref{DistributionofUsergroups}).\\ 
-\begin{table}[htbp] % Distribution of Usergroups
+The participants were randomly and uniformly assigned to one treatment once they directed to the welcome page. The low share of treatment 1 is related to the fact that the treatment was added in Trial 2 (Table \ref{Distributionoftreatments}).\\ 
+\begin{table}[htbp] % Distribution of treatments
   \centering
-  \caption{Distribution of Usergroups}
-    \label{DistributionofUsergroups}
+  \caption{Distribution of treatments}
+    \label{Distributionoftreatments}
     \begin{tabular}{ccc|c|c}
     \toprule
-    Usergroup & Users & Share & Share of Dropouts\footnotemark & Share of Minimum Payout\\
+    treatment & Users & Share & Share of Dropouts\footnotemark & Share of Minimum Payout\\
     \midrule
     1     & 33    & 10\%  & 37\% & 31\%\\
     2     & 88    & 25\%  & 40\% & 25\%\\
@@ -355,12 +355,12 @@ The participants were randomly and uniformly assigned to one usergroup once they
 \end{table}%
 \footnotetext{See Appendix \ref{Appendix-Formulas} for the formulas.}
 
-The distribution of payout presented in Figure \ref{Distributionofpayout} shows that the medians of the payout per usergroup is decreasing with the \textit{NumberOfColours} in Trial 1, whereas an inverted U-Shape can be detected for the medians in Trial 2, with a peak at the medium 7-colours level.\\
+The distribution of payout presented in Figure \ref{Distributionofpayout} shows that the medians of the payout per treatment is decreasing with the \textit{NumberOfColours} in Trial 1, whereas an inverted U-Shape can be detected for the medians in Trial 2, with a peak at the medium 7-colours level.\\
 28\% of all users achieved the minimum payout of each Trial, and 72\% reached the bonus bar. The highest payout is \$0.44 accomplished in Trial 1, and \$0.55 in Trial 2. 
 
  \begin{figure}[htbp] % Distributionofpayout
 \begin{center} 
-  \caption{Distribution of payout among usergroups for each Trial}
+  \caption{Distribution of payout among treatments for each Trial}
     \label{Distributionofpayout}
     \begin{subfigure} 
 \centering
@@ -381,67 +381,63 @@ As indicated by the histograms, there is a lot of noise in the data, where value
 
 \begin{figure}[htbp] % DistributionFinalResult
 \begin{center} 
-\begin{subfigure} 
-\centering
-\includegraphics[height = 0.38\textwidth]{HistogramFinalResult.pdf}
-\end{subfigure} 
-\begin{subfigure} 
-\centering
-  \includegraphics[height = 0.38\textwidth]{BoxplotFinalResult.pdf}
-\end{subfigure}
+  \includegraphics[height = 0.38\textwidth]{DescriptivesFinalResult.pdf}
   \caption{FinalResult - Histogram and Box plot}
     \label{DistributionFinalResult} 
 \end{center}
 \end{figure}
-The distribution of the different result types among different usergroups is exemplary, as shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all usergroups are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
-Significant outliers can be found in all usergroups except for the usergroup with two colours. Outliers with a \textit{FinalResult} lower than 20\% can be explained by a lack of effort and understanding on behalf of the participant, as opposed to an experience of information overload. A result greater than this value can namely be achieved by simply clicking on random boxes to fill up the knapsack.
+
+
+The distribution of the different result types among different treatments is exemplary, as shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
+Significant outliers can be found in all treatments except for the treatment with two colours. Outliers with a \textit{FinalResult} lower than 20\% can be explained by a lack of effort and understanding on behalf of the participant, as opposed to an experience of information overload. A result greater than this value can namely be achieved by simply clicking on random boxes to fill up the knapsack.
 
 \paragraph{Time}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Time}
 
 The histograms of the different time types differ. Whereas \textit{FirstTime} shows a positively skewed distribution, \textit{BestTime} seems to be close to a uniform distribution. \textit{FinalTime} has a negative skewed population and \textit{DecisionTime} looks like like the results are normally distributed. The majority of participants reached the \textit{FirstResult} under 40s, and finished the round mostly in over 80s. Since only a minority played the full time, the use of the "Next"-button seemed to be popular. No specific time can be identified when participants were most likely to reach their \textit{BestResult}.\\
-The box plot of \textit{FirstTime} shows similar medians across usergroups. The interquartile range is smaller for usergroups 2 and 4, and bigger for usergroup 3. The standard deviation is the lowest for all time types.\\
-The interquartile range is similar among all usergroups for the \textit{BestTime}. The values for the medians define a U-shape, with usergroup 2 as the apex. The medians for \textit{FinalTime} vary across usergroups, yet the interquartile range does not seem to be dependent on the number of colours.\\
+The box plot of \textit{FirstTime} shows similar medians across treatments. The interquartile range is smaller for treatments 2 and 4, and bigger for treatment 3. The standard deviation is the lowest for all time types.\\
+The interquartile range is similar among all treatments for the \textit{BestTime}. The values for the medians define a U-shape, with treatment 2 as the apex. The medians for \textit{FinalTime} vary across treatments, yet the interquartile range does not seem to be dependent on the number of colours.\\
 
 \begin{figure}[htbp] % DistributionFinalTime
 \begin{center} 
-\begin{subfigure} 
-\centering
-\includegraphics[height = 0.38\textwidth]{HistogramFinalResultTime.pdf}
-\end{subfigure} 
-\begin{subfigure} 
-\centering
-  \includegraphics[height = 0.38\textwidth]{BoxplotFinalResultTime.pdf}
-\end{subfigure}
+\includegraphics[height = 0.38\textwidth]{DescriptivesFinalTime.pdf}
   \caption{FinalTime - Histogram and Box plot}
     \label{DistributionFinalTime} 
 \end{center}
 \end{figure}
 
-The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to 6s for all usergroups. The medians are similar and usergroup 3 has a wider interquartile range. 
+\paragraph{Decision time and number}
+The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to 6s for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants showed between 5 and 40 clicks on boxes per round. The box plot for \textit{DecisionNumber} show outliers for every treatment, ranging from less than 10 until up to 90 clicks per round.
+
+\begin{figure}[htbp] % DistributionDecisionNumber
+\begin{center} 
+\includegraphics[height = 0.38\textwidth]{DescriptivesDecisionNumber.pdf}
+  \caption{DecisionNumber - Histogram and Box plot}
+    \label{DistributionDecisionNumber} 
+\end{center}
+\end{figure}
 
 %% ===============================
 \paragraph{Questionnaire}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Questionnaire}
 
-Figure \ref{ProfilePlot} summarizes the medians for all the answers per usergroup. In general, the medians for all usergroups show similar values, so the different treatments do not seem to have an influence on the answers.\\
+Figure \ref{ProfilePlot} summarizes the medians for all the answers per treatment. In general, the medians for all treatments show similar values, so the different treatments do not seem to have an influence on the answers.\\
 The mental demand for the task is described as high(5) for all \textit{NumberOfColours} and the pace of the task is defined as a medium to rather high. 
 Most of the participants indicate their performance as rather successful and define their effort for accomplishing their level of performance as high.\\  
-There are no significant signs for negative emotions like insecurity and irritation triggered by the experiment, since all usergroups indicate a low level of negative emotions. 
+There are no significant signs for negative emotions like insecurity and irritation triggered by the experiment, since all treatments indicate a low level of negative emotions. 
 Most individuals define "colour" (2) as the main box attribute they were looking at to reach their end result. A high number of individuals take into consideration a combination of the box size and box colour(3) to reach their end result.
 The box size (1) is considered by only a small minority of participants, and other strategies(4) or no strategy(5) have only a minor influence on individuals. 
-
 
 %\begin{landscape}
  \begin{figure}[htbp] % ProfilePlotAnswer
 \begin{center} %ProfilePlotAnswer
 \begin{subfigure} 
 \centering
- \includegraphics[height = 0.55\textwidth]{ProfilePlotLegend.pdf}
+ \includegraphics[height = 0.6\textwidth]{ProfilePlotLegend.pdf}
 \end{subfigure} 
 \begin{subfigure}
 \centering
- \includegraphics[height = 0.55\textwidth]{ProfilePlotAnswer.pdf}
+ \includegraphics[height = 0.6\textwidth]{ProfilePlotAnswer.pdf}
 \end{subfigure}   
   \caption{Profile Plot}
   \label{ProfilePlot}

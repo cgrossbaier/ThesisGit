@@ -3,36 +3,38 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Colours assigned to benefit range}}{10}{figure.3.1}
 \contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Grey scale per number of colours}}{11}{figure.3.2}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Exemplary interface (Usergroup 5, Trial 1 )}}{12}{figure.3.3}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Exemplary interface (treatment 5, Trial 1 )}}{12}{figure.3.3}
 \contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Payout scheme for Trial 1 and 2}}{13}{figure.3.4}
 \contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Design of the online environment}}{16}{figure.3.5}
 \contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Final page with payout}}{16}{figure.3.6}
 \contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Generated Data in Rounds}}{18}{figure.3.7}
 \contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Time spent on different stages of experiment}}{18}{figure.3.8}
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Distribution of payout among usergroups for each Trial}}{20}{figure.3.9}
-\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces FinalResult - Histogram and Box plot}}{20}{figure.3.10}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Distribution of payout among treatments for each Trial}}{20}{figure.3.9}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces FinalResult - Histogram and Box plot}}{21}{figure.3.10}
 \contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces FinalTime - Histogram and Box plot}}{21}{figure.3.11}
-\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Profile Plot}}{22}{figure.3.12}
-\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces Correlation of variables}}{23}{figure.3.13}
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces DecisionNumber - Histogram and Box plot}}{22}{figure.3.12}
+\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces Profile Plot}}{23}{figure.3.13}
+\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces Correlation of variables}}{24}{figure.3.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Transformation \textit {FirstResult} - Skewness and Kurtosis for different $\lambda $ values}}{28}{figure.4.1}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces User-individual Intercepts for the \textit {FirstResult}-parameters}}{29}{figure.4.2}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Results for Filter 1: Information Granularity}}{31}{figure.4.3}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Results for Filter 1: Learning effect}}{31}{figure.4.4}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Results for Filter 2: Information Granularity}}{33}{figure.4.5}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Transformation \textit {FirstResult} - Skewness and Kurtosis for different $\lambda $ values}}{29}{figure.4.1}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces User-individual Intercepts for the \textit {FirstResult}-parameters}}{30}{figure.4.2}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Results for Filter 1: Information Granularity}}{32}{figure.4.3}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Results for Filter 1: Learning effect}}{32}{figure.4.4}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Results for Filter 2: Information Granularity}}{34}{figure.4.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Interface for Usergroup 1, 2 and 3}}{42}{figure.6.1}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Box - Cox - Transformation}}{43}{figure.6.2}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces FirstResult - Histogram and Box plot}}{43}{figure.6.3}
-\contentsline {figure}{\numberline {D.9}{\ignorespaces Question 2 - Histogram and Box plot}}{43}{figure.6.9}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces BestResult - Histogram and Box plot}}{44}{figure.6.4}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces FirstTime - Histogram and Box plot}}{44}{figure.6.5}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces BestTime - Histogram and Box plot}}{44}{figure.6.6}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces DecisionTime - Histogram and Box plot}}{45}{figure.6.7}
-\contentsline {figure}{\numberline {D.8}{\ignorespaces Question 1 - Histogram and Box plot}}{45}{figure.6.8}
-\contentsline {figure}{\numberline {D.10}{\ignorespaces Question 3 - Histogram and Box plot}}{45}{figure.6.10}
-\contentsline {figure}{\numberline {D.11}{\ignorespaces Question 4 - Histogram and Box plot}}{46}{figure.6.11}
-\contentsline {figure}{\numberline {D.12}{\ignorespaces Question 5 - Histogram and Box plot}}{46}{figure.6.12}
-\contentsline {figure}{\numberline {D.13}{\ignorespaces Question 6 - Histogram and Box plot}}{46}{figure.6.13}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Interface for Usergroup 1, 2 and 3}}{41}{figure.6.1}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Box - Cox - Transformation}}{42}{figure.6.2}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces FirstResult - Histogram and Box plot}}{42}{figure.6.3}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces BestResult - Histogram and Box plot}}{42}{figure.6.4}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces FirstTime - Histogram and Box plot}}{43}{figure.6.5}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces BestTime - Histogram and Box plot}}{43}{figure.6.6}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces DecisionTime - Histogram and Box plot}}{43}{figure.6.7}
+\contentsline {figure}{\numberline {D.8}{\ignorespaces DecisionNumber - Histogram and Box plot}}{44}{figure.6.8}
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Question 1 - Histogram and Box plot}}{44}{figure.6.9}
+\contentsline {figure}{\numberline {D.10}{\ignorespaces Question 2 - Histogram and Box plot}}{44}{figure.6.10}
+\contentsline {figure}{\numberline {D.11}{\ignorespaces Question 3 - Histogram and Box plot}}{45}{figure.6.11}
+\contentsline {figure}{\numberline {D.12}{\ignorespaces Question 4 - Histogram and Box plot}}{45}{figure.6.12}
+\contentsline {figure}{\numberline {D.13}{\ignorespaces Question 5 - Histogram and Box plot}}{45}{figure.6.13}
+\contentsline {figure}{\numberline {D.14}{\ignorespaces Question 6 - Histogram and Box plot}}{46}{figure.6.14}

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\ThesisGit\thesis.tex" bookmark3="0"/>
+    <document hasfocus="false" master="true" line="0" bookmark1="0" bookmark2="0" file="C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\ThesisGit\thesis.tex" bookmark3="0"/>
     <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\thesis.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/text/introduction.tex" bookmark3="0"/>
     <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/evaluation.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/declaration.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/conclusion.tex" bookmark3="0"/>
-    <document hasfocus="true" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/experiment.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/text/introduction.tex" bookmark3="0"/>
+    <document hasfocus="true" master="false" line="20" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/conclusion.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="6" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/declaration.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="4" bookmark1="0" bookmark2="0" file="C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/text/experiment.tex" bookmark3="0"/>
 </TexmakerSession>
