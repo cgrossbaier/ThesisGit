@@ -14,11 +14,6 @@ Berinsky, A.~J., G.~A. Huber, and G.~S. Lenz. (2012).
   Amazon.com's mechanical turk.
 \newblock {\em Political Analysis\/}.
 
-\bibitem[\protect\citeauthoryear{Box}{Box}{1949}]{Box1949}
-Box, G. E.~P. (1949).
-\newblock A general distribution theory for a class of likelihood criteria.
-\newblock {\em Biometrika\/}~{\em 36\/}(3/4), 317--346.
-
 \bibitem[\protect\citeauthoryear{Buhrmester, Kwang, and Gosling}{Buhrmester
   et~al.}{2011}]{Buhrmester2011}
 Buhrmester, M.~D., T.~Kwang, and S.~D. Gosling (2011).
@@ -145,11 +140,6 @@ Laird, N.~M. and J.~H. Ware (1982).
 \newblock Random effects models for longitudinal data.
 \newblock {\em Biometrics\/}~{\em 38}, 963--974.
 
-\bibitem[\protect\citeauthoryear{Levene}{Levene}{1960}]{Levene1960}
-Levene, H. (1960).
-\newblock Robust tests for equality of variances.
-\newblock {\em Contributions to Probability and Statistics\/}, 278--92.
-
 \bibitem[\protect\citeauthoryear{Lurie}{Lurie}{2004}]{Lurie2004}
 Lurie, N. (2004).
 \newblock Decision making in information-rich environments: the role of
@@ -179,6 +169,12 @@ Payne, J.~W. (1982).
 Pinheiro, J., D.~Bates, and S.~DebRoy (2013, 01).
 \newblock Package nlme: Linear and nonlinear mixed effects models.
 \newblock Online.
+
+\bibitem[\protect\citeauthoryear{{R Core Team}}{{R Core Team}}{2012}]{R2012}
+{R Core Team} (2012).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock Vienna, Austria: R Foundation for Statistical Computing.
+\newblock {ISBN} 3-900051-07-0.
 
 \bibitem[\protect\citeauthoryear{Rand}{Rand}{2012}]{Rand2012}
 Rand, D.~G. (2012).

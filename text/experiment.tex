@@ -292,8 +292,8 @@ The next step is to identify the users who played the game again and again, and 
 The data of 6 participants showed errors, e.g. a total game time per round greater than 100s or a result greater than 100\%. Since we were not able to trace the origin of these errors, we will exclude these users from the data set.
 As a result, 349 users with a total of 1046 rounds build the data for the statistical analysis.\\
 Within the data used for the analysis, there are two further filters applied.
-These filters are used to focus on the participants who made an effort to succeed in the game. As stated in Section \ref{ch:Experiment:sec:DataacquisitionDescriptives:subsec:DescriptiveStatistics}, a performance lower than 80\% per round can be explained by a lack of effort or understanding on the participant's side. By including the whole range of performances in the parameter estimation, the statistical noise might dilute the inductive value of the study. Consequently, we only concentrate on participants who were able to achieve a result greater or equal to 80\% for each round. This filter leaves a data set is consisting of 174 users with a total of 522 rounds recorded.\\
-In a second step, users who are assigned to a treatment group with less than 7 colours are excluded. This is due to statistical implications of the data since significant results can be seen for the three remaining treatments. After applying both filters, the data sets is made up by 110 users with 330 rounds recorded.
+These filters are used to focus on the participants who made an effort to succeed in the game. As stated in Section \ref{ch:Experiment:sec:DataacquisitionDescriptives:subsec:DescriptiveStatistics}, a performance lower than 80\% per round can be explained by a lack of effort or understanding on the participant's side. By including the whole range of performances in the parameter estimation, the statistical noise might dilute the inductive value of the study. Consequently, we only concentrate on participants who were able to achieve a result greater or equal to 80\% for each round. This filter leaves a data set is consisting of 174 users with a total of 522 rounds recorded. We will refer to this filter as \textbf{Filter 1}.\\
+In a second step, users who are assigned to a treatment group with less than 7 colours are excluded. This is due to statistical implications of the data since significant results can be seen for the three remaining treatments. After applying both filters, the data sets is made up by 110 users with 330 rounds recorded. We will refer to this data set as \textbf{Filter 2}.
 %
 %
 %Before starting the analysis, an additional implication of \acf{AMT} is taken into consideration. Cognitive load experiments conducted to the \acf{AMT} platform run the risk that users might not commit their full attention on the task (rf. to Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}) and therefore may experience a different information overload than the users who give their full attention to the task. We try to determine these users by looking at the time it takes them to fill up the knapsack for the first time. Users who just randomly select boxes and quickly fill up the knapsack have a very low time until they first reach a full knapsack. A time border of 5 seconds is chosen to separate these users and the filtered data is excluded from the data set.
@@ -331,26 +331,27 @@ Only a small number of participants gave feedback on areas of improvement, inclu
 
 This section aims to provide a descriptive overview of the unfiltered data. First, the treatment statistics are introduced, second the descriptive results from the game are analysed and third the answers from the participants are examined.
 %% ===============================
-\paragraph{treatments and payout}
+\paragraph{Treatments and payout}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Distributionoftreatments}
 
 The participants were randomly and uniformly assigned to one treatment once they directed to the welcome page. The low share of treatment 1 is related to the fact that the treatment was added in Trial 2 (Table \ref{Distributionoftreatments}).\\ 
 \begin{table}[htbp] % Distribution of treatments
   \centering
-  \caption{Distribution of treatments}
+  \caption{Distribution of Treatments}
     \label{Distributionoftreatments}
-    \begin{tabular}{ccc|c|c}
+    \begin{tabular}{ccccc}
     \toprule
-    treatment & Users & Share & Share of Dropouts\footnotemark & Share of Minimum Payout\\
+    \multirow{2}[1]{*}{Treatment} & \multirow{2}[1]{*}{Users} & \multirow{2}[1]{*}{Share} & Share of  & Share\\
+    						   &						&  						 &	Dropouts\footnotemark & Minimum Payout\\
     \midrule
     1     & 33    & 10\%  & 37\% & 31\%\\
     2     & 88    & 25\%  & 40\% & 25\%\\
     3     & 78    & 22\%  & 40\% & 31\%\\
     4     & 72    & 21\%  & 39\% & 28\%\\
     5     & 77    & 22\%  & 46\% & 27\%\\
-        \hline
-    Total & 348   & 100\% & 40\% & 28\%\\
+    
     \bottomrule
+    Total & 348   & 100\% & 40\% & 28\%\\
     \end{tabular}%
 \end{table}%
 \footnotetext{See Appendix \ref{Appendix-Formulas} for the formulas.}
@@ -362,14 +363,7 @@ The distribution of payout presented in Figure \ref{Distributionofpayout} shows 
 \begin{center} 
   \caption{Distribution of payout among treatments for each Trial}
     \label{Distributionofpayout}
-    \begin{subfigure} 
-\centering
-\includegraphics[height = 0.38\textwidth]{BoxplotPayout1.pdf}
-\end{subfigure} 
-\begin{subfigure} 
-\centering
-  \includegraphics[height = 0.38\textwidth]{BoxplotPayout2.pdf}
-\end{subfigure}
+  \includegraphics[width = 1\textwidth]{DescriptivesPayout.pdf}
 \end{center}
 \end{figure}
 %% ===============================
@@ -378,40 +372,36 @@ The distribution of payout presented in Figure \ref{Distributionofpayout} shows 
 The characteristics of the histograms for all result types show a similar shape\footnote{Figure \ref{DistributionFinalResult} (left) shows the histogram for the \textit{FinalResult}, see Appendix \ref{Appendix-Descriptive} for Histograms and Boxplots for \textit{FirstResult} and \textit{BestResult}.}. The average result lies between 75\% for the \textit{FirstResult} and 79\% for the \textit{BestResult}. The relative standard deviation is high with values greater than 23\%, and the standard deviation is just below 20. 
 The population for all result types are negatively skewed with a value between --1.29 and --1.58, and the kurtosis is positive in the range of 1.4 and 2.4. The modal group can be found between 85\% and 95\%.\\
 As indicated by the histograms, there is a lot of noise in the data, where values below 80\% are likely to be related to a minimum effort. Therefore, the statistical potential by excluding the low performers is emphasized.
-
+The distribution of the different result types among different treatments is exemplary, as shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
 \begin{figure}[htbp] % DistributionFinalResult
 \begin{center} 
-  \includegraphics[height = 0.38\textwidth]{DescriptivesFinalResult.pdf}
+  \includegraphics[width = 1\textwidth]{DescriptivesFinalResult.pdf}
   \caption{FinalResult - Histogram and Box plot}
     \label{DistributionFinalResult} 
 \end{center}
 \end{figure}
-
-
-The distribution of the different result types among different treatments is exemplary, as shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
 Significant outliers can be found in all treatments except for the treatment with two colours. Outliers with a \textit{FinalResult} lower than 20\% can be explained by a lack of effort and understanding on behalf of the participant, as opposed to an experience of information overload. A result greater than this value can namely be achieved by simply clicking on random boxes to fill up the knapsack.
 
 \paragraph{Time}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Time}
-
 The histograms of the different time types differ. Whereas \textit{FirstTime} shows a positively skewed distribution, \textit{BestTime} seems to be close to a uniform distribution. \textit{FinalTime} has a negative skewed population and \textit{DecisionTime} looks like like the results are normally distributed. The majority of participants reached the \textit{FirstResult} under 40s, and finished the round mostly in over 80s. Since only a minority played the full time, the use of the "Next"-button seemed to be popular. No specific time can be identified when participants were most likely to reach their \textit{BestResult}.\\
-The box plot of \textit{FirstTime} shows similar medians across treatments. The interquartile range is smaller for treatments 2 and 4, and bigger for treatment 3. The standard deviation is the lowest for all time types.\\
-The interquartile range is similar among all treatments for the \textit{BestTime}. The values for the medians define a U-shape, with treatment 2 as the apex. The medians for \textit{FinalTime} vary across treatments, yet the interquartile range does not seem to be dependent on the number of colours.\\
-
-\begin{figure}[htbp] % DistributionFinalTime
+\begin{figure}[H] % DistributionFinalTime
 \begin{center} 
-\includegraphics[height = 0.38\textwidth]{DescriptivesFinalTime.pdf}
+\includegraphics[width = 1\textwidth]{DescriptivesFinalTime.pdf}
   \caption{FinalTime - Histogram and Box plot}
     \label{DistributionFinalTime} 
 \end{center}
 \end{figure}
+The box plot of \textit{FirstTime} shows similar medians across treatments. The interquartile range is smaller for treatments 2 and 4, and bigger for treatment 3. The standard deviation is the lowest for all time types.\\
+The interquartile range is similar among all treatments for the \textit{BestTime}. The values for the medians define a U-shape, with treatment 2 as the apex. The medians for \textit{FinalTime} vary across treatments, yet the interquartile range does not seem to be dependent on the number of colours.\\
+
 
 \paragraph{Decision time and number}
-The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to 6s for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants showed between 5 and 40 clicks on boxes per round. The box plot for \textit{DecisionNumber} show outliers for every treatment, ranging from less than 10 until up to 90 clicks per round.
+The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to 6s for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants showed between 5 and 40 clicks on boxes per round. The box plot for \textit{DecisionNumber} show outliers for every treatment, resulting in a range from less than 10 until up to 90 clicks per round.
 
 \begin{figure}[htbp] % DistributionDecisionNumber
 \begin{center} 
-\includegraphics[height = 0.38\textwidth]{DescriptivesDecisionNumber.pdf}
+\includegraphics[width = 1\textwidth]{DescriptivesDecisionNumber.pdf}
   \caption{DecisionNumber - Histogram and Box plot}
     \label{DistributionDecisionNumber} 
 \end{center}
@@ -450,10 +440,11 @@ The box size (1) is considered by only a small minority of participants, and oth
 Figure \ref{Correlation} concludes the correlation between all the variables. The bigger the size of the circles, the greater the magnitude of the correlation. The green colour represents a positive correlation, the red colour represents a negative linear correlation, so big green circles refer to a high positive linear correlation.\\
 The two main correlation groups which can be identified as the different result types and the different time types both show a high correlation. The correlation between these two groups is smaller, but still positive. This result indicates that the more time a participant takes for completing the round, the more successful he or she is, vice versa.\\
 The linear correlation between the time and result variables, and the independent variables \textit{Round} and \textit{NumberOfColours}, is only small, yet the \textit{DecisionTime} shows a higher positive correlation for the \textit{NumberOfColours} and a negative correlation for \textit{Round}. In other words, the more colours that are added to the game, the more time it takes the participant on average to make a decision and the decision time decreases over the rounds played.\\
+The \textit{DecisionNumber} is positively correlated with the result and time variables, showing the highest correlation value for \textit{FinalTime} and \textit{BestTime}.
 
  \begin{figure}[htbp] % 130315_CorrelationAction
 \begin{center} %130315_CorrelationAction
-  \includegraphics[height = 0.8\textwidth]{CorrelationAction.pdf}
+  \includegraphics[height = 0.7\textwidth]{CorrelationAction.pdf}
   \caption{Correlation of variables}
   \label{Correlation}
 \end{center}

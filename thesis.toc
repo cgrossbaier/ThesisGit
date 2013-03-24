@@ -32,7 +32,7 @@
 \contentsline {paragraph}{Experiment stages}{18}{section*.18}
 \contentsline {paragraph}{Feedback from participants}{19}{section*.19}
 \contentsline {section}{\numberline {3.5}Data Descriptives}{19}{section.3.5}
-\contentsline {paragraph}{treatments and payout}{19}{section*.20}
+\contentsline {paragraph}{Treatments and payout}{19}{section*.20}
 \contentsline {paragraph}{Performance}{20}{section*.21}
 \contentsline {paragraph}{Time}{21}{section*.22}
 \contentsline {paragraph}{Decision time and number}{22}{section*.23}
@@ -50,20 +50,20 @@
 \contentsline {paragraph}{Normality Assumption}{28}{section*.28}
 \contentsline {paragraph}{Conclusion}{29}{section*.29}
 \contentsline {subsection}{\numberline {4.3.1}Choice of a \ac {LMM} model}{29}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Implementation in R}{31}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Implementation in R}{30}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Results for the \ac {LMM}}{31}{subsection.4.3.3}
 \contentsline {paragraph}{Filter 1: Users with \textit {BestResult} $\geq $ 80\% for each round}{31}{section*.30}
-\contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{34}{section*.31}
-\contentsline {chapter}{\numberline {5}Conclusion}{36}{chapter.5}
-\contentsline {paragraph}{\acf {AMT} and the quality of data}{36}{section*.32}
-\contentsline {paragraph}{The level of information granularity affects the \textit {FirstResult} and \textit {DecisionTime}}{36}{section*.33}
-\contentsline {paragraph}{Learning Effect has a influence on the performance and the game time}{37}{section*.34}
-\contentsline {paragraph}{Individual Influence on the performance}{37}{section*.35}
-\contentsline {section}{\numberline {5.1}Limitations of the experiment}{37}{section.5.1}
-\contentsline {chapter}{\numberline {6}Declaration}{39}{chapter.6}
-\contentsline {chapter}{Appendix}{40}{chapter*.36}
-\contentsline {section}{\numberline {A}Algorithm}{40}{section.6.1}
-\contentsline {section}{\numberline {B}Interface for each usergroup}{41}{section.6.2}
-\contentsline {section}{\numberline {C}Formulas}{42}{section.6.3}
-\contentsline {section}{\numberline {D}Descriptive statistics}{42}{section.6.4}
-\contentsline {chapter}{Bibliography}{49}{section*.37}
+\contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{32}{section*.31}
+\contentsline {chapter}{\numberline {5}Conclusion}{34}{chapter.5}
+\contentsline {paragraph}{\acf {AMT} and the quality of data}{34}{section*.32}
+\contentsline {paragraph}{The level of information granularity affects the \textit {FirstResult}, \textit {DecisionTime} and \textit {DecisionNumber}.}{34}{section*.33}
+\contentsline {paragraph}{Learning Effect has a influence on the performance and the game time}{35}{section*.34}
+\contentsline {paragraph}{Individual characteristics affect the the performance}{35}{section*.35}
+\contentsline {section}{\numberline {5.1}Limitations of the experiment}{35}{section.5.1}
+\contentsline {chapter}{\numberline {6}Declaration}{37}{chapter.6}
+\contentsline {chapter}{Appendix}{38}{chapter*.36}
+\contentsline {section}{\numberline {A}Algorithm}{38}{section.6.1}
+\contentsline {section}{\numberline {B}Interface for each usergroup}{39}{section.6.2}
+\contentsline {section}{\numberline {C}Formulas}{40}{section.6.3}
+\contentsline {section}{\numberline {D}Descriptive statistics}{40}{section.6.4}
+\contentsline {chapter}{Bibliography}{45}{section*.37}
