@@ -10,60 +10,60 @@
 \contentsline {paragraph}{Information granularity}{6}{section*.6}
 \contentsline {paragraph}{Learning effect}{7}{section*.7}
 \contentsline {chapter}{\numberline {3}Experiment}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Knapsack}{8}{section.3.1}
+\contentsline {section}{\numberline {3.1}Knapsack Problem}{8}{section.3.1}
 \contentsline {paragraph}{Greedy Algorithm}{9}{section*.8}
 \contentsline {paragraph}{Dynamic Programming Algorithm}{9}{section*.9}
 \contentsline {paragraph}{Comparability of the problems' difficulty}{10}{section*.10}
 \contentsline {subparagraph}{Comparability across treatments and rounds}{10}{section*.11}
-\contentsline {subsection}{\numberline {3.1.1}Setup}{11}{subsection.3.1.1}
+\contentsline {paragraph}{Setup}{11}{section*.12}
 \contentsline {section}{\numberline {3.2}Interface}{11}{section.3.2}
-\contentsline {paragraph}{Colour scale}{11}{section*.12}
+\contentsline {paragraph}{Colour scale}{11}{section*.13}
 \contentsline {subsection}{\numberline {3.2.1}Description of the toolboxes}{12}{subsection.3.2.1}
-\contentsline {paragraph}{Result}{12}{section*.13}
-\contentsline {paragraph}{Payout}{12}{section*.14}
-\contentsline {paragraph}{Time}{12}{section*.15}
-\contentsline {paragraph}{Round}{13}{section*.16}
+\contentsline {paragraph}{Result}{12}{section*.14}
+\contentsline {paragraph}{Payout}{12}{section*.15}
+\contentsline {paragraph}{Time}{12}{section*.16}
+\contentsline {paragraph}{Round}{13}{section*.17}
 \contentsline {subsection}{\numberline {3.2.2}Payout scheme}{13}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Online Implementation}{13}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}\acl {AMT}}{14}{subsection.3.3.1}
-\contentsline {paragraph}{Limitations of \acl {AMT}}{14}{section*.17}
+\contentsline {paragraph}{Limitations of \acl {AMT}}{14}{section*.18}
 \contentsline {subsection}{\numberline {3.3.2}System design}{15}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Data acquisition and Descriptives}{17}{section.3.4}
-\contentsline {paragraph}{Experiment stages}{18}{section*.18}
-\contentsline {paragraph}{Feedback from participants}{19}{section*.19}
+\contentsline {paragraph}{Experiment stages}{18}{section*.19}
+\contentsline {paragraph}{Feedback from participants}{19}{section*.20}
 \contentsline {section}{\numberline {3.5}Data Descriptives}{19}{section.3.5}
-\contentsline {paragraph}{Treatments and payout}{19}{section*.20}
-\contentsline {paragraph}{Performance}{20}{section*.21}
-\contentsline {paragraph}{Time}{21}{section*.22}
-\contentsline {paragraph}{Decision time and number}{22}{section*.23}
-\contentsline {paragraph}{Questionnaire}{22}{section*.24}
-\contentsline {paragraph}{Correlation of variables}{22}{section*.25}
+\contentsline {paragraph}{Treatments and payout}{19}{section*.21}
+\contentsline {paragraph}{Performance}{20}{section*.22}
+\contentsline {paragraph}{Time}{21}{section*.23}
+\contentsline {paragraph}{Decision time and number}{22}{section*.24}
+\contentsline {paragraph}{Questionnaire}{22}{section*.25}
+\contentsline {paragraph}{Correlation of variables}{22}{section*.26}
 \contentsline {chapter}{\numberline {4}Evaluation}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Choice of statistical model}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}\acf {NP}}{26}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Tests of Independent samples: \textit {NumberOfColours} \& \textit {Trial}}{26}{subsection.4.2.1}
-\contentsline {paragraph}{\textit {Trial}}{26}{section*.26}
-\contentsline {paragraph}{\textit {NumberOfColours}}{27}{section*.27}
+\contentsline {paragraph}{\textit {Trial}}{26}{section*.27}
+\contentsline {paragraph}{\textit {NumberOfColours}}{27}{section*.28}
 \contentsline {subsection}{\numberline {4.2.2}Tests of dependent samples: \textit {Round}}{27}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Conclusion}{27}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}\acf {LMM}}{28}{section.4.3}
-\contentsline {paragraph}{Normality Assumption}{28}{section*.28}
-\contentsline {paragraph}{Conclusion}{29}{section*.29}
+\contentsline {paragraph}{Normality Assumption}{28}{section*.29}
+\contentsline {paragraph}{Conclusion}{29}{section*.30}
 \contentsline {subsection}{\numberline {4.3.1}Choice of a \ac {LMM} model}{29}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Implementation in R}{30}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Results for the \ac {LMM}}{31}{subsection.4.3.3}
-\contentsline {paragraph}{Filter 1: Users with \textit {BestResult} $\geq $ 80\% for each round}{31}{section*.30}
-\contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{32}{section*.31}
-\contentsline {chapter}{\numberline {5}Conclusion}{34}{chapter.5}
-\contentsline {paragraph}{\acf {AMT} and the quality of data}{34}{section*.32}
-\contentsline {paragraph}{The level of information granularity affects the \textit {FirstResult}, \textit {DecisionTime} and \textit {DecisionNumber}.}{34}{section*.33}
-\contentsline {paragraph}{Learning Effect has a influence on the performance and the game time}{35}{section*.34}
-\contentsline {paragraph}{Individual characteristics affect the the performance}{35}{section*.35}
-\contentsline {section}{\numberline {5.1}Limitations of the experiment}{35}{section.5.1}
-\contentsline {chapter}{\numberline {6}Declaration}{37}{chapter.6}
-\contentsline {chapter}{Appendix}{38}{chapter*.36}
-\contentsline {section}{\numberline {A}Algorithm}{38}{section.6.1}
-\contentsline {section}{\numberline {B}Interface for each usergroup}{39}{section.6.2}
-\contentsline {section}{\numberline {C}Formulas}{40}{section.6.3}
-\contentsline {section}{\numberline {D}Descriptive statistics}{40}{section.6.4}
-\contentsline {chapter}{Bibliography}{45}{section*.37}
+\contentsline {paragraph}{Filter 1: Users with \textit {BestResult} $\geq $ 80\% for each round}{31}{section*.31}
+\contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{32}{section*.32}
+\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
+\contentsline {paragraph}{\acf {AMT} and the quality of data}{35}{section*.33}
+\contentsline {paragraph}{The level of information granularity affects the \textit {FirstResult}, \textit {DecisionTime} and \textit {DecisionNumber}.}{35}{section*.34}
+\contentsline {paragraph}{Learning Effect has a influence on the performance and the game time}{36}{section*.35}
+\contentsline {paragraph}{Individual characteristics affect the the performance}{36}{section*.36}
+\contentsline {section}{\numberline {5.1}Limitations of the experiment}{36}{section.5.1}
+\contentsline {chapter}{\numberline {6}Declaration}{38}{chapter.6}
+\contentsline {chapter}{Appendix}{39}{chapter*.37}
+\contentsline {section}{\numberline {A}Algorithm}{39}{section.6.1}
+\contentsline {section}{\numberline {B}Interface for each usergroup}{40}{section.6.2}
+\contentsline {section}{\numberline {C}Formulas}{41}{section.6.3}
+\contentsline {section}{\numberline {D}Descriptive statistics}{41}{section.6.4}
+\contentsline {chapter}{Bibliography}{47}{section*.38}

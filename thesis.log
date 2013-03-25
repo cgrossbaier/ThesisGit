@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.6.2)  24 MAR 2013 23:01
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.6.2)  25 MAR 2013 23:45
 entering extended mode
 **thesis.tex
 
@@ -1368,11 +1368,11 @@ babelbib: Set language for keywords in the bibliography fixed to ngerman
 
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
 isGit\titlepage.tex"
-<logos/KITLogo_EN_RGB.pdf, id=162, 196.46399pt x 90.77916pt>
+<logos/KITLogo_EN_RGB.pdf, id=158, 196.46399pt x 90.77916pt>
 File: logos/KITLogo_EN_RGB.pdf Graphic file (type pdf)
 
 <use logos/KITLogo_EN_RGB.pdf>
-<logos/IISMLogo_RGB.pdf, id=163, 369.38pt x 79.29625pt>
+<logos/IISMLogo_RGB.pdf, id=159, 369.38pt x 79.29625pt>
 File: logos/IISMLogo_RGB.pdf Graphic file (type pdf)
 
 <use logos/IISMLogo_RGB.pdf>
@@ -1474,12 +1474,19 @@ Class scrbook Warning: \float@addtolists detected!
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
 isGit\text/content.tex"
 Chapter 2.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 87.
+LaTeX Font Info:    No file TS1aer.fd. on input line 87.
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textbullet' on input line 87.
+
 [3
 
 
 
 ] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 174--178
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
 
  []
 
@@ -1570,7 +1577,7 @@ er (name{AlgoLine.0.9}) has been already used, duplicate ignored
                                                   
 l.108 \begin{equation}
                       ]
-<./figures/colourSchemeBenefit.pdf, id=534, 308.82751pt x 361.95761pt>
+<./figures/colourSchemeBenefit.pdf, id=527, 308.82751pt x 361.95761pt>
 File: ./figures/colourSchemeBenefit.pdf Graphic file (type pdf)
 
 <use ./figures/colourSchemeBenefit.pdf>
@@ -1578,22 +1585,22 @@ Underfull \vbox (badness 7796) has occurred while \output is active []
 
  [10 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/
 ThesisGit/figures/colourSchemeBenefit.pdf>]
-<./figures/colourScheme.pdf, id=561, 609.85568pt x 446.80923pt>
+<./figures/colourScheme.pdf, id=554, 609.85568pt x 446.80923pt>
 File: ./figures/colourScheme.pdf Graphic file (type pdf)
 
 <use ./figures/colourScheme.pdf>
-<./figures/Interface4.pdf, id=563, 458.31694pt x 269.09233pt>
+<./figures/Interface4.pdf, id=556, 458.31694pt x 269.09233pt>
 File: ./figures/Interface4.pdf Graphic file (type pdf)
 
 <use ./figures/Interface4.pdf> [11 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachel
 orarbeit/[1] Laufende Version/ThesisGit/figures/colourScheme.pdf>] [12 <C:/User
 s/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/fig
 ures/Interface4.pdf>]
-<./figures/PayoutScheme.pdf, id=641, 438.33981pt x 304.23228pt>
+<./figures/PayoutScheme.pdf, id=635, 438.33981pt x 304.23228pt>
 File: ./figures/PayoutScheme.pdf Graphic file (type pdf)
 
 <use ./figures/PayoutScheme.pdf>
-<./figures/PayoutScheme2.pdf, id=642, 428.1694pt x 289.62892pt>
+<./figures/PayoutScheme2.pdf, id=636, 428.1694pt x 289.62892pt>
 File: ./figures/PayoutScheme2.pdf Graphic file (type pdf)
 
 <use ./figures/PayoutScheme2.pdf>
@@ -1612,11 +1619,11 @@ although it is yet undefined on input line 266.
 pdfTeX warning: pdflatex (file C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarb
 eit/[1] Laufende Version/ThesisGit/figures/EnfoLab_Coordination.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<./figures/EnfoLab_Coordination.pdf, id=730, 1576.5701pt x 542.025pt>
+<./figures/EnfoLab_Coordination.pdf, id=724, 1576.5701pt x 542.025pt>
 File: ./figures/EnfoLab_Coordination.pdf Graphic file (type pdf)
 
 <use ./figures/EnfoLab_Coordination.pdf>
-<./figures/PayoutView.pdf, id=732, 512.05292pt x 360.42966pt>
+<./figures/PayoutView.pdf, id=726, 512.05292pt x 360.42966pt>
 File: ./figures/PayoutView.pdf Graphic file (type pdf)
 
 <use ./figures/PayoutView.pdf>
@@ -1626,29 +1633,29 @@ LaTeX Warning: Float too large for page by 78.90462pt on input line 269.
 [16 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
 hesisGit/figures/EnfoLab_Coordination.pdf> <C:/Users/Chris/My Dropbox/Uni/WS201
 2/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/PayoutView.pdf>]
-<./figures/User_Waterfall.pdf, id=775, 558.98503pt x 293.3618pt>
+<./figures/User_Waterfall.pdf, id=769, 558.98503pt x 293.3618pt>
 File: ./figures/User_Waterfall.pdf Graphic file (type pdf)
 
 <use ./figures/User_Waterfall.pdf> [17
 
 
 ]
-<./figures/Timelog.pdf, id=783, 444.45494pt x 339.66608pt>
+<./figures/Timelog.pdf, id=777, 444.45494pt x 339.66608pt>
 File: ./figures/Timelog.pdf Graphic file (type pdf)
 
 <use ./figures/Timelog.pdf> [18 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelora
 rbeit/[1] Laufende Version/ThesisGit/figures/User_Waterfall.pdf> <C:/Users/Chri
 s/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/T
 imelog.pdf>] [19]
-<./figures/DescriptivesPayout.pdf, id=839, 1011.78pt x 433.62pt>
+<./figures/DescriptivesPayout.pdf, id=833, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesPayout.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesPayout.pdf>
-<./figures/DescriptivesFinalResult.pdf, id=844, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFinalResult.pdf, id=838, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFinalResult.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFinalResult.pdf>
-<./figures/DescriptivesFinalTime.pdf, id=845, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFinalTime.pdf, id=839, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFinalTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFinalTime.pdf>
@@ -1666,20 +1673,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--397
 hesisGit/figures/DescriptivesFinalResult.pdf> <C:/Users/Chris/My Dropbox/Uni/WS
 2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesFinalTim
 e.pdf>]
-<./figures/DescriptivesDecisionNumber.pdf, id=874, 1011.78pt x 433.62pt>
+<./figures/DescriptivesDecisionNumber.pdf, id=868, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesDecisionNumber.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesDecisionNumber.pdf>
-<./figures/ProfilePlotLegend.pdf, id=876, 351.43414pt x 505.89pt>
+<./figures/ProfilePlotLegend.pdf, id=870, 351.43414pt x 505.89pt>
 File: ./figures/ProfilePlotLegend.pdf Graphic file (type pdf)
 
 <use ./figures/ProfilePlotLegend.pdf>
-<./figures/ProfilePlotAnswer.pdf, id=877, 475.39429pt x 504.9776pt>
+<./figures/ProfilePlotAnswer.pdf, id=871, 475.39429pt x 504.9776pt>
 File: ./figures/ProfilePlotAnswer.pdf Graphic file (type pdf)
 
 <use ./figures/ProfilePlotAnswer.pdf> [22 <C:/Users/Chris/My Dropbox/Uni/WS2012
 /Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesDecisionNumb
-er.pdf>] <./figures/CorrelationAction.pdf, id=891, 505.89pt x 505.89pt>
+er.pdf>] <./figures/CorrelationAction.pdf, id=885, 505.89pt x 505.89pt>
 File: ./figures/CorrelationAction.pdf Graphic file (type pdf)
 
 <use ./figures/CorrelationAction.pdf>) [23 <C:/Users/Chris/My Dropbox/Uni/WS201
@@ -1690,62 +1697,69 @@ Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/CorrelationAction.pdf>]
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
 isGit\text/evaluation.tex"
 Chapter 4.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 19.
-LaTeX Font Info:    No file TS1aer.fd. on input line 19.
-
-LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 19.
-
 [25
 
 
 
-] [26] [27] <./figures/SkewKurtosis.pdf, id=979, 718.19574pt x 400.4359pt>
+] [26] [27] <./figures/SkewKurtosis.pdf, id=972, 718.19574pt x 400.4359pt>
 File: ./figures/SkewKurtosis.pdf Graphic file (type pdf)
 
 <use ./figures/SkewKurtosis.pdf> [28]
-<./figures/PlotIntercept.pdf, id=1001, 1156.32pt x 505.89pt>
+<./figures/PlotIntercept.pdf, id=994, 1156.32pt x 505.89pt>
 File: ./figures/PlotIntercept.pdf Graphic file (type pdf)
 
 <use ./figures/PlotIntercept.pdf> [29 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bac
 helorarbeit/[1] Laufende Version/ThesisGit/figures/SkewKurtosis.pdf>]
-Overfull \hbox (12.98845pt too wide) in paragraph at lines 359--360
+Overfull \hbox (12.98845pt too wide) in paragraph at lines 353--354
 [][] 
  []
 
 [30 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
 hesisGit/figures/PlotIntercept.pdf>]
-<./figures/Filter2PlotInformationGranularity.pdf, id=1061, 722.7pt x 289.08pt>
+<./figures/Filter2PlotInformationGranularity.pdf, id=1054, 722.7pt x 289.08pt>
 File: ./figures/Filter2PlotInformationGranularity.pdf Graphic file (type pdf)
 
 <use ./figures/Filter2PlotInformationGranularity.pdf>
-<./figures/Filter2PlotLearningEffect.pdf, id=1064, 722.7pt x 289.08pt>
+Package acronym Info: Label `acro:LME' newly defined as it shall be overridden
+although it is yet undefined on input line 382.
+
+
+Package acronym Warning: Acronym `LME' is not defined on input line 382.
+
+
+Package acronym Warning: Acronym `LME' is not defined on input line 382.
+
+[31 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
+hesisGit/figures/Filter2PlotInformationGranularity.pdf>]
+<./figures/Filter2PlotLearningEffect.pdf, id=1070, 722.7pt x 289.08pt>
 File: ./figures/Filter2PlotLearningEffect.pdf Graphic file (type pdf)
 
-<use ./figures/Filter2PlotLearningEffect.pdf> [31 <C:/Users/Chris/My Dropbox/Un
-i/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Filter2PlotInfor
-mationGranularity.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 470--473
+<use ./figures/Filter2PlotLearningEffect.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 471--474
 
  []
 
-[32 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
-hesisGit/figures/Filter2PlotLearningEffect.pdf>]
-<./figures/Filter3PlotInformationGranularity.pdf, id=1093, 722.7pt x 289.08pt>
+
+<./figures/Filter3PlotInformationGranularity.pdf, id=1073, 722.7pt x 289.08pt>
 File: ./figures/Filter3PlotInformationGranularity.pdf Graphic file (type pdf)
 
-<use ./figures/Filter3PlotInformationGranularity.pdf>) [33 <C:/Users/Chris/My D
-ropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Filter3
-PlotInformationGranularity.pdf>]
+<use ./figures/Filter3PlotInformationGranularity.pdf>
+Underfull \vbox (badness 5161) has occurred while \output is active []
+
+ [32 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/
+ThesisGit/figures/Filter2PlotLearningEffect.pdf>] [33]) [34
+
+
+ <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/Thes
+isGit/figures/Filter3PlotInformationGranularity.pdf>]
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
 isGit\text/conclusion.tex"
 Chapter 5.
-[34
+[35
 
 
 
-] [35]) [36]
+] [36]) [37]
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
 isGit\text/declaration.tex"
 Chapter 6.
@@ -1754,7 +1768,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
-) [37
+) [38
 
 
 
@@ -1815,101 +1829,101 @@ Line.0.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.59  } }
-          [38
+          [39
 
 
-] <./figures/Interface1.pdf, id=1150, 460.31874pt x 267.49095pt>
+] <./figures/Interface1.pdf, id=1147, 460.31874pt x 267.49095pt>
 File: ./figures/Interface1.pdf Graphic file (type pdf)
 
 <use ./figures/Interface1.pdf>
-<./figures/Interface2.pdf, id=1151, 457.55914pt x 268.05243pt>
+<./figures/Interface2.pdf, id=1148, 457.55914pt x 268.05243pt>
 File: ./figures/Interface2.pdf Graphic file (type pdf)
 
 <use ./figures/Interface2.pdf>
-<./figures/Interface3.pdf, id=1152, 461.25539pt x 273.35756pt>
+<./figures/Interface3.pdf, id=1149, 461.25539pt x 273.35756pt>
 File: ./figures/Interface3.pdf Graphic file (type pdf)
 
-<use ./figures/Interface3.pdf> [39 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachel
+<use ./figures/Interface3.pdf> [40 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachel
 orarbeit/[1] Laufende Version/ThesisGit/figures/Interface1.pdf> <C:/Users/Chris
 /My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/In
 terface2.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende
  Version/ThesisGit/figures/Interface3.pdf>]
-<./figures/DescriptivesFirstResult.pdf, id=1238, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFirstResult.pdf, id=1235, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFirstResult.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFirstResult.pdf>
-<./figures/DescriptivesBestResult.pdf, id=1239, 1011.78pt x 433.62pt>
+<./figures/DescriptivesBestResult.pdf, id=1236, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesBestResult.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesBestResult.pdf>
-<./figures/DescriptivesFirstTime.pdf, id=1240, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFirstTime.pdf, id=1237, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFirstTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFirstTime.pdf>
-<./figures/DescriptivesBestTime.pdf, id=1241, 1011.78pt x 433.62pt>
+<./figures/DescriptivesBestTime.pdf, id=1238, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesBestTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesBestTime.pdf>
-<./figures/DescriptivesDecisionTime.pdf, id=1242, 1011.78pt x 433.62pt>
+<./figures/DescriptivesDecisionTime.pdf, id=1239, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesDecisionTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesDecisionTime.pdf>
-<./figures/HistogramQuestion1.pdf, id=1243, 441.30573pt x 352.05637pt>
+<./figures/HistogramQuestion1.pdf, id=1240, 441.30573pt x 352.05637pt>
 File: ./figures/HistogramQuestion1.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion1.pdf>
-<./figures/BoxplotQuestion1.pdf, id=1244, 424.05043pt x 318.68723pt>
+<./figures/BoxplotQuestion1.pdf, id=1241, 424.05043pt x 318.68723pt>
 File: ./figures/BoxplotQuestion1.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion1.pdf>
-<./figures/HistogramQuestion2.pdf, id=1245, 441.05377pt x 355.6264pt>
+<./figures/HistogramQuestion2.pdf, id=1242, 441.05377pt x 355.6264pt>
 File: ./figures/HistogramQuestion2.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion2.pdf>
-<./figures/BoxplotQuestion2.pdf, id=1246, 433.79788pt x 321.93726pt>
+<./figures/BoxplotQuestion2.pdf, id=1243, 433.79788pt x 321.93726pt>
 File: ./figures/BoxplotQuestion2.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion2.pdf>
-<./figures/HistogramQuestion3.pdf, id=1247, 439.30028pt x 362.00044pt>
+<./figures/HistogramQuestion3.pdf, id=1244, 439.30028pt x 362.00044pt>
 File: ./figures/HistogramQuestion3.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion3.pdf>
-<./figures/BoxplotQuestion3.pdf, id=1248, 442.32347pt x 315.84029pt>
+<./figures/BoxplotQuestion3.pdf, id=1245, 442.32347pt x 315.84029pt>
 File: ./figures/BoxplotQuestion3.pdf Graphic file (type pdf)
 
-<use ./figures/BoxplotQuestion3.pdf> [40 <C:/Users/Chris/My Dropbox/Uni/WS2012/
+<use ./figures/BoxplotQuestion3.pdf> [41 <C:/Users/Chris/My Dropbox/Uni/WS2012/
 Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesFirstResult.p
 df> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
-hesisGit/figures/DescriptivesBestResult.pdf>] [41 <C:/Users/Chris/My Dropbox/Un
+hesisGit/figures/DescriptivesBestResult.pdf>] [42 <C:/Users/Chris/My Dropbox/Un
 i/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesFirs
 tTime.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Ve
 rsion/ThesisGit/figures/DescriptivesBestTime.pdf> <C:/Users/Chris/My Dropbox/Un
 i/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesDeci
 sionTime.pdf>]
-<./figures/HistogramQuestion4.pdf, id=1285, 441.61052pt x 346.00737pt>
+<./figures/HistogramQuestion4.pdf, id=1282, 441.61052pt x 346.00737pt>
 File: ./figures/HistogramQuestion4.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion4.pdf>
-<./figures/BoxplotQuestion4.pdf, id=1286, 435.40532pt x 323.86958pt>
+<./figures/BoxplotQuestion4.pdf, id=1283, 435.40532pt x 323.86958pt>
 File: ./figures/BoxplotQuestion4.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion4.pdf>
-<./figures/HistogramQuestion5.pdf, id=1287, 440.86234pt x 356.0245pt>
+<./figures/HistogramQuestion5.pdf, id=1284, 440.86234pt x 356.0245pt>
 File: ./figures/HistogramQuestion5.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion5.pdf>
-<./figures/BoxplotQuestion5.pdf, id=1288, 435.55392pt x 321.29224pt>
+<./figures/BoxplotQuestion5.pdf, id=1285, 435.55392pt x 321.29224pt>
 File: ./figures/BoxplotQuestion5.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion5.pdf>
-<./figures/HistogramQuestion6.pdf, id=1289, 441.77428pt x 353.74187pt>
+<./figures/HistogramQuestion6.pdf, id=1286, 441.77428pt x 353.74187pt>
 File: ./figures/HistogramQuestion6.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion6.pdf>
-<./figures/BoxplotQuestion6.pdf, id=1290, 413.1641pt x 321.21657pt>
+<./figures/BoxplotQuestion6.pdf, id=1287, 413.1641pt x 321.21657pt>
 File: ./figures/BoxplotQuestion6.pdf Graphic file (type pdf)
 
-<use ./figures/BoxplotQuestion6.pdf> [42 <C:/Users/Chris/My Dropbox/Uni/WS2012/
+<use ./figures/BoxplotQuestion6.pdf> [43 <C:/Users/Chris/My Dropbox/Uni/WS2012/
 Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/HistogramQuestion1.pdf> <
 C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/Thesis
 Git/figures/BoxplotQuestion1.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelo
@@ -1918,7 +1932,7 @@ s/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/fig
 ures/BoxplotQuestion2.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit
 /[1] Laufende Version/ThesisGit/figures/HistogramQuestion3.pdf> <C:/Users/Chris
 /My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Bo
-xplotQuestion3.pdf>] [43 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[
+xplotQuestion3.pdf>] [44 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[
 1] Laufende Version/ThesisGit/figures/HistogramQuestion4.pdf> <C:/Users/Chris/M
 y Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Boxp
 lotQuestion4.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Lauf
@@ -1927,18 +1941,19 @@ ox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/BoxplotQues
 tion5.pdf> <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Ve
 rsion/ThesisGit/figures/HistogramQuestion6.pdf> <C:/Users/Chris/My Dropbox/Uni/
 WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/BoxplotQuestion6.p
-df>] [44
+df>] [45
 
-])
+]) [46
+
+
+
+]
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
-isGit\thesis.bbl" [45
+isGit\thesis.bbl" [47
 
-
-
-
-] [46])
+] [48])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
- [47]
+ [49]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
 
 ("C:\Users\Chris\My Dropbox\Uni\WS2012\Bachelorarbeit\[1] Laufende Version\Thes
@@ -1959,17 +1974,17 @@ isGit\text/conclusion.aux")
 isGit\text/declaration.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0FAF40F06009B527C25D7DA1A4B84D3D;2762.
+(rerunfilecheck)             Checksum: 89345C429A053008F4F3DC3F9CAD75C4;2704.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18626 strings out of 495285
- 306532 string characters out of 3179828
- 426102 words of memory out of 3000000
- 20912 multiletter control sequences out of 15000+200000
+ 18629 strings out of 495285
+ 306522 string characters out of 3179828
+ 426109 words of memory out of 3000000
+ 20914 multiletter control sequences out of 15000+200000
  69632 words of font info for 134 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  59i,22n,54p,1130b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2050,9 +2065,9 @@ sfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-supe
 r/sfrm1095.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplb
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on thesis.pdf (53 pages, 1931971 bytes).
+Output written on thesis.pdf (55 pages, 1933245 bytes).
 PDF statistics:
- 1649 PDF objects out of 1728 (max. 8388607)
- 275 named destinations out of 1000 (max. 500000)
- 540 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1651 PDF objects out of 1728 (max. 8388607)
+ 276 named destinations out of 1000 (max. 500000)
+ 532 words of extra memory for PDF output out of 10000 (max. 10000000)
 

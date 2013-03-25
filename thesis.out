@@ -8,32 +8,31 @@
 \BOOKMARK [1][-]{section.2.3}{2.3 Information Overload in a knapsack problem}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{2.4 Hypotheses}{chapter.2}% 9
 \BOOKMARK [0][]{chapter.3}{3 Experiment}{}% 10
-\BOOKMARK [1][-]{section.3.1}{3.1 Knapsack}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Setup}{section.3.1}% 12
-\BOOKMARK [1][-]{section.3.2}{3.2 Interface}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Description of the toolboxes}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Payout scheme}{section.3.2}% 15
-\BOOKMARK [1][-]{section.3.3}{3.3 Online Implementation}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Amazon Mechanical Turk}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 System design}{section.3.3}% 18
-\BOOKMARK [1][-]{section.3.4}{3.4 Data acquisition and Descriptives}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{3.5 Data Descriptives}{chapter.3}% 20
-\BOOKMARK [0][]{chapter.4}{4 Evaluation}{}% 21
-\BOOKMARK [1][-]{section.4.1}{4.1 Choice of statistical model}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{4.2 Non-Parametric Statistical Tests \(NP\)}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Tests of Independent samples: NumberOfColours \046 Trial}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Tests of dependent samples: Round}{section.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Conclusion}{section.4.2}% 26
-\BOOKMARK [1][-]{section.4.3}{4.3 Linear Mixed Model \(LMM\)}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Choice of a LMM model}{section.4.3}% 28
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Implementation in R}{section.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Results for the LMM}{section.4.3}% 30
-\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 31
-\BOOKMARK [1][-]{section.5.1}{5.1 Limitations of the experiment}{chapter.5}% 32
-\BOOKMARK [0][]{chapter.6}{6 Declaration}{}% 33
-\BOOKMARK [0][]{chapter*.36}{Appendix}{}% 34
-\BOOKMARK [1][-]{section.6.1}{A Algorithm}{chapter*.36}% 35
-\BOOKMARK [1][-]{section.6.2}{B Interface for each usergroup}{chapter*.36}% 36
-\BOOKMARK [1][-]{section.6.3}{C Formulas}{chapter*.36}% 37
-\BOOKMARK [1][-]{section.6.4}{D Descriptive statistics}{chapter*.36}% 38
-\BOOKMARK [0][]{section*.37}{Bibliography}{}% 39
+\BOOKMARK [1][-]{section.3.1}{3.1 Knapsack Problem}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{3.2 Interface}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Description of the toolboxes}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Payout scheme}{section.3.2}% 14
+\BOOKMARK [1][-]{section.3.3}{3.3 Online Implementation}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Amazon Mechanical Turk}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 System design}{section.3.3}% 17
+\BOOKMARK [1][-]{section.3.4}{3.4 Data acquisition and Descriptives}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{3.5 Data Descriptives}{chapter.3}% 19
+\BOOKMARK [0][]{chapter.4}{4 Evaluation}{}% 20
+\BOOKMARK [1][-]{section.4.1}{4.1 Choice of statistical model}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{4.2 Non-Parametric Statistical Tests \(NP\)}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Tests of Independent samples: NumberOfColours \046 Trial}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Tests of dependent samples: Round}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Conclusion}{section.4.2}% 25
+\BOOKMARK [1][-]{section.4.3}{4.3 Linear Mixed Model \(LMM\)}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Choice of a LMM model}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Implementation in R}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Results for the LMM}{section.4.3}% 29
+\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 30
+\BOOKMARK [1][-]{section.5.1}{5.1 Limitations of the experiment}{chapter.5}% 31
+\BOOKMARK [0][]{chapter.6}{6 Declaration}{}% 32
+\BOOKMARK [0][]{chapter*.37}{Appendix}{}% 33
+\BOOKMARK [1][-]{section.6.1}{A Algorithm}{chapter*.37}% 34
+\BOOKMARK [1][-]{section.6.2}{B Interface for each usergroup}{chapter*.37}% 35
+\BOOKMARK [1][-]{section.6.3}{C Formulas}{chapter*.37}% 36
+\BOOKMARK [1][-]{section.6.4}{D Descriptive statistics}{chapter*.37}% 37
+\BOOKMARK [0][]{section*.38}{Bibliography}{}% 38

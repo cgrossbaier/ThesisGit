@@ -6,10 +6,10 @@
 \label{ch:Experiment}
 %% ==============
 
-The knapsack problem introduced in Section \ref{ch:Literature Review:sec:Information Overload in a knapsack problem} is used to test the described hypotheses in an experiment. A \ac{GUI} is designed to provide an intuitive approach to participants. The experiment is conducted using the \ac{AMT} website and it reached 400 participants.
+The knapsack problem introduced in Section \ref{ch:Literature Review:sec:Information Overload in a knapsack problem} is used to test the described hypotheses in our experiment. A \ac{GUI} is designed to provide an intuitive approach to participants. The experiment is conducted using the \ac{AMT} website and it reached 400 participants.
 
 %% ===========================
-\section{Knapsack}
+\section{Knapsack Problem}
 \label{ch:Experiment:sec:Knapsack}
 
 The knapsack problem used in this thesis is the 0-1-knapsack problem. This problem maximizes the cumulated value of items under a given weight restriction.
@@ -38,7 +38,7 @@ v_j := \text{value of item j} \quad w_j := \text{weight of item j}
   \caption{Fixed parameters for the knapsack problem}
     \label{tab:KnapsackParamters}
 \end{table}%
-Table \ref{tab:KnapsackParamters} shows the given parameters for the considered 0-1 knapsack problem. The width of the knapsack, or the pixel width, represents the given weight restriction for the problem. There are 100 items to choose from and the weight of each item ranges from 20 to 80 units, the benefit is defined between 0 and 80.
+Table \ref{tab:KnapsackParamters} shows the given parameters for the considered 0-1 knapsack problem. The width of the knapsack, or the pixel width, represents the given weight restriction for the problem. There are 100 items to choose from and the weight of each item ranges from 20 to 80 units, and the benefit is defined as a number between 0 and 80.
 
 Since the knapsack problem is an NP-hard problem, individuals are faced with a high rate of complexity, which involves its optimization in reasonable time. A "greedy approach" is used to model a potential approach used by participants to tackle the optimization.
 The optimal solution is calculated by a pseudo-polynomial time algorithm using dynamic programming.
@@ -110,7 +110,7 @@ benchmark = \Big(\dfrac{\text{\ac{DPA} solution}}{\text{\ac{GA} solution}} -1\Bi
 \end{equation}
 
 \subparagraph{Comparability across treatments and rounds}
-Four different knapsack problems are created, one for each round plus the Trial round. To ensure the \textbf{comparability across rounds}, the benchmark is used to identify hard problems. For each round, the benchmark is calculated and the values are checked to be sufficiently similar.\\ 
+Four different knapsack problems are created in our experiment, one for each round plus the Trial round. To ensure the \textbf{comparability across rounds}, the benchmark is used to identify hard problems. For each round, the benchmark is calculated and the values are checked to be sufficiently similar.\\ 
 In order to compare the performance of participants in \textbf{different treatments}, the underlying knapsack problems are the same for each individual round.
  \begin{figure}[htp] % Colour Scheme Benefit
 \begin{center}
@@ -122,7 +122,7 @@ In order to compare the performance of participants in \textbf{different treatme
 Consequently, the distribution of the benefits and weights of each box is the same, the only difference is the assignation of colours. In the 2-colour treatment, one colour covers a wide range of benefit values, whereas in the 15-colour setup, one colour represents a smaller range of colours (refer to Figure \ref{fig:colourSchemeBenefit}).  Consequently, there are two opposing trends when increasing the number of colours. The more colours there are, the more alternatives there are to choose from, so the complexity of the task might increase. In contrast to that, the range of the benefit within one colour gets smaller, so participants can better distinguish between different benefit values.
 
 %% ===========================
-\subsection{Setup}
+\paragraph{Setup}
 \label{ch:Experiment:sec:Setup}
 %% ===========================
 
@@ -137,10 +137,10 @@ Each box is randomly\footnote{The used random function returns a randomly determ
 \label{ch:Experiment:sec:Interface}
 %% ===========================
 The items the participant can choose from are modelled as boxes. The width of each box represents its weight; every box has the same height. Thus, the wider the box, the greater the weight. 
-The colour of the box represent the benefit.
+The colour of the box represents the benefit.
 
 \paragraph{Colour scale}
-The colour scale used for each treatment aims to provide an intuitive range of colours with easily distinguishable colours. A traffic light colour scale was first favoured  since it is a well-known and intuitive colour pattern. Trial runs, however, showed that participants had problems distinguishing the colours when they were dealing with 11 or 15 colours. Especially green boxes were hard to differentiate for test participants. Furthermore, a colour-blindness test would have been necessary to identify colour-blind users.
+The colour scale used for each treatment aims to provide an intuitive range of colours that are also easily distinguishable. A traffic light colour scale was first favoured  since it is a well-known and intuitive colour pattern. Trial runs, however, showed that participants had problems distinguishing the colours when they were dealing with 11 or 15 colours. Green boxes were especially hard to differentiate for test participants. Furthermore, a colour-blindness test would have been necessary to identify colour-blind users.
 As a result, we use a grey scale as shown in Figure \ref{fig:colourScheme}. This colour scale is both intuitive and accessible to colour-blind users and the grey levels are easy to distinguish.\\
 \begin{figure}[htp] % Colour Scheme
 \begin{center}
@@ -201,8 +201,8 @@ To ensure that participants would not only hit the \textit{Next}-button in each 
 \end{center}
 \end{figure} 
 
-The reason for choosing a bonus system is caused by one goal of the experiment: get participants to compare boxes of different weights and benefits and make them try different combinations for the knapsack.
-In order to incentivize such behaviour, a bonus system can help. Trial rounds show that getting up to 80\% is possible when participants make an effort and try out different solutions. Hence, the performance incentive starts at 80\% and offers the participants in the first Trial an additional bonus up to \$0.10 when reaching 100\%, resulting in a potential total payout of \$0.15 per round. Nevertheless, the experience of the first Trial shows a large number of participants who did not reach the bonus bar. Therefore, we increased the leverage of the bonus system, from a ground payment of \$0.01 to a possible total payout of \$0.21 when reaching 100\%.
+The reason for choosing a bonus system is due to one goal of the experiment to get participants to compare boxes of different weights and benefits and to make  them try different combinations for the knapsack.
+In order to incentivize such behaviour, a bonus system can help. Trial rounds show that getting up to 80\% is possible when participants make an effort and try out different solutions. Hence, the performance incentive starts at 80\% and offers the participants in the first Trial an additional bonus of up to \$0.10 when reaching 100\%, resulting in a potential total payout of \$0.15 per round. Nevertheless, the experience of the first Trial shows a large number of participants who did not reach the bonus bar. Therefore, we increased the leverage of the bonus system, from a ground payment of \$0.01 to a possible total payout of \$0.21 when reaching 100\%.
 
 %% ===========================
 \section{Online Implementation}
@@ -214,21 +214,21 @@ The experiment is advertised on \acf{AMT} as a \ac{HIT}.
 
 \subsection{\acl{AMT}}
 \label{ch:Experiment:sec:OnlineImplementation:subsec:AMT}
-A previous research study\citep{Schmidt2012} using a similar interface and setup, reached 28 participants. While the results helped to implicate that more colours to choose from does not increase the average payout, it lacked a wider statistical foundation.
+A previous research study\citep{Schmidt2012} using a similar interface and setup reached 28 participants. While the results helped to prove that more colours to choose from does not increase the average payout, the overall experiment lacked a wider statistical foundation.
 Consequently, we try to increase the statistical foundation by using the online labour market \acf{AMT}.
 
 The \ac{AMT} platform is the most active online labour market for conducting behavioural experiments. It enables researchers to conduct experiments very quickly, cheaply \citep{Rand2012}, and in good quality \citep{Gardner2012}. Moreover, the data gained is at least as reliable as the data obtained via traditional methods \citep{Buhrmester2011}. \ac{AMT} connects employers with potential workers who are paid according to the satisfactory completion of the assigned task. Furthermore, workers can be motivated to perform well by a bonus structure. Since individuals can participate entirely over the computer, the experience is quite similar to participating in computer simulations.
 
-Researchers can act as employers on the \ac{AMT} website and offer experiments as tasks named a \acf{HIT}. Completing an \ac{HIT} usually results in a payment of less than \$1 for less than 5 minutes of work. Users are from around the world, but mainly concentrated in the United States and India \citep{Rand2012}. These findings are supported by our experiences.
+Researchers can act as employers on the \ac{AMT} website by offering experiments as tasks otherwise known as a \acf{HIT}. Completing an \ac{HIT} usually results in a payment of less than \$1.00 for less than 5 minutes of work. Users are from around the world, but mainly concentrated in the United States and India \citep{Rand2012}. These findings are supported by our experiences.
 
 \paragraph{Limitations of \acl{AMT}}
 Although the \ac{AMT} offers an enormous potential for the purposes of our study, there are several limitations to keep in mind.
 
-First, in contrast to experiments conducted in a lab environment, \ac{AMT} experiments have limited control over what kind of individuals take part in the experiment. In particular, the lack of control over \textit{non-random attrition} \citep{Rand2012} defines a limitation for our experiment in terms of the participant structure. Individuals who are overwhelmed with the complexity of the task might drop out early, do not finish the \ac{HIT} and are not included in the statistical analysis. This can have an impact on the pool of participants among different treatments and can therefore limit the ability to compare results. As a result, we have tried to make the description of the game and the game itself as simple and intuitive as possible in order to reduce the risk of early drop-outs. Trial runs previous to offering the \ac{HIT} revealed that using the Trial round helped individuals to get a better understanding of the game and the task.
+First, in contrast to experiments conducted in a lab environment, \ac{AMT} experiments have limited control over what kind of individuals take part in the experiment. In particular, the lack of control over \textit{non-random attrition} \citep{Rand2012} defines a limitation for our experiment in terms of the participant structure. Individuals who are overwhelmed with the complexity of the task might drop out early, not finish the \ac{HIT} and may not be included in the statistical analysis. This can have an impact on the pool of participants among different treatments and can therefore limit our ability to compare results. As a result, we have tried to make the description of the game and the game itself as simple and intuitive as possible in order to reduce the risk of early drop-outs. Trial runs previous to offering the \ac{HIT} revealed that using the Trial round helped individuals to get a better understanding of the game and the task.
 
-Second, researchers cannot be sure as to what participants are actually doing during the experiment on the \ac{AMT} platform. This fact especially reduces the benefit to cognitive load experiments similar to our experiment since our experiment necessitates the full attention of individuals. We try to tackle this issue by setting a time restriction per round so individuals have an incentive to stay on task. Moreover, we log the time individuals spend on different parts of the experiment and evaluate the participant's actions by analysing the recorded data in order to fully understand each individual's actions. Last, we take this limitation into consideration in the choice of a statistical model.
+Second, researchers cannot be sure as to what participants are actually doing during the experiment on the \ac{AMT} platform. This fact especially reduces the benefit to cognitive load experiments similar to our experiment since our experiment necessitates the full attention each individual. We try to tackle this issue by setting a time restriction per round so individuals have an incentive to stay on task. Moreover, we log the time that individuals spend on different parts of the experiment and evaluate the participant's actions by analysing the recorded data in order to fully understand each individual's actions. Last, we take this limitation into consideration in the choice of a statistical model.
 
-Third, the statistical analysis is based on the assumptions that every observation is independent. In the setup of our experiment, individuals are able to conduct the experiment over and over by re-directing to the start page after finishing a session. Even though repeat responding appears to be a minor concern according to \cite{Berinsky2012}, it can still potentially dilute the observation independence and the statistical value of the learning effect. We therefore record the IP address of each user when they are directed to the welcome page in order to exclude those participants who play several games successively. However, this method does not exclude those individuals who change their IP in-between experiments.
+Third, the statistical analysis is based on the assumptions that every observation is independent. In the setup of our experiment, individuals are able to conduct the experiment over and over by re-directing to the start page after finishing a session. Even though repeat responses appear to be a minor concern according to \cite{Berinsky2012}, it can still potentially dilute the observation independence and the statistical value of the learning effect. We therefore record the IP address of each user when they are directed to the welcome page in order to exclude those participants who play several games successively. However, this method does not exclude those individuals who change their IP in-between experiments.
 Moreover, the \ac{AMT} platform has other disadvantages against a lab experiment in terms of user support during the experiment, and the lack of control over the English language competencies of individuals. 
 
 After summarizing the benefits and limitations of the \ac{AMT} platform, we conclude that \ac{AMT} is feasible for our experiment when the design and evaluation of the experiment takes the limitations into consideration.
@@ -278,7 +278,7 @@ At the end, the data on the server is compared to the \ac{HIT}s completed, and t
 \section{Data acquisition and Descriptives}
 \label{ch:Experiment:sec:DataacquisitionDescriptives}
 %% ===========================
-The 1\textsuperscript{st} Trial was offered on \ac{AMT} between the 20\textsuperscript{th} and the 21\textsuperscript{th} of February 2013 and reached 200 participants, the 2\textsuperscript{nd} Trial with the same amount of participants ran between the 5\textsuperscript{th} and the 8\textsuperscript{th} of March 2013. A total of 31.291 actions were recorded on the server.\\
+The 1\textsuperscript{st} Trial was offered on \ac{AMT} between the 20\textsuperscript{th} and the 21\textsuperscript{st} of February 2013 and reached 200 participants, the 2\textsuperscript{nd} Trial with the same amount of participants ran between the 5\textsuperscript{th} and the 8\textsuperscript{th} of March 2013. A total of 31.291 actions were recorded on the server.\\
 Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{R}, the recorded data is cumulated on a per round basis for the purposes of this study. For each round per user, a data point is created that includes information on the user, treatment and corresponding number of colours, round, first result, best result, \textit{FinalResult} and finally the time for each result.
  \begin{figure}[htp] % Interface 1
 \begin{center} %Exemplary interface
