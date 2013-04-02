@@ -266,7 +266,7 @@ Friedman's Test results are shown in Table \ref{NPTest} and reject the null hypo
 
 \subsection{Conclusion}
 The findings for the \ac{NP} tests underline the magnitude of the statistical noise in the unfiltered data. According to the Kruskal-Wallis-Test, no influence is detectable by \textit{NumberOfColours} when no filter is used. As a result, a parameter estimation is only suitable for Filter 1 and Filter 2.\\
-Furthermore, not every dependent variable is defined as being influenced by the independent variables for the filtered data, so the parameter estimations for those variables might be non-significant.
+Furthermore, not every dependent variable seems to be influenced by the independent variables for the filtered data, so the parameter estimations for those variables might be non-significant.
 \newpage
 %% ===============================
 \section{\acf{LMM}}
@@ -368,29 +368,7 @@ According to the conclusions for the \acl{NP}' results, only the filtered data i
 The results for the fixed effects of the \ac{LMM} can be interpreted in the same way as an ANOVA regression. Nevertheless, we must take into account that the intercept represents the mean over all subjects and each individual subject has its own individual intercept \citep{Seltman2012}. The population made up by all individual intercepts approximately follows a normal distribution, with the computed overall estimate as the mean and the variance of the random intercepts (Figure \ref{fig:Intercepts}).
 
 \paragraph{Filter 1: Users with \textit{BestResult} $\geq$ 80\% for each round}
-\textbf{\textit{NumberOfColours} } The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}  - they all have significant parameter estimations for all parameters. So the hypothesis, that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours}, he or she is facing is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a polynomial relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}. 
-\begin{figure}[H] % Filter1PlotColoursFirstResult	
-\begin{center}
-\includegraphics[width = 1\textwidth]{Filter2PlotInformationGranularity.pdf}    
-  \caption[Results for Filter 1: Information Granularity]{Results for Filter 1: Information Granularity\footnotemark}
-    \label{fig:Results for Filter 1: Information Granularity} 
-\end{center}
-\end{figure}
-\footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{Round}.}
-
-\textbf{\textit{Round} }The learning effect, hence the influence of the \textit{Round}, is significant for all variables. So we can conclude that there is a learning effect when playing several rounds in the experiment, and the slope of this learning effect diminishes with the number of rounds played, as indicated by the logarithmic relation. Surprisingly, the number of decisions increases with the number of rounds, as supposed to the expected decline. \\
-Since the time it takes participants to reach the \textit{FinalResult} is represented by the product of \textit{DecisionNumber} and \textit{DecisionTime}, two opposing trends can be identified when describing the round effect on the \textit{FinalTime}. Whereas the number of decisions increases, the time to take a decision decreases. The \ac{LME} returns a negative parameter for \textit{FinalTime},  indicating that the decrease in the decision times outbalances the increase of decision. Figure 
-
-\begin{figure}[H] % Filter1PlotColoursFirstResult	
-\begin{center}
-\includegraphics[width = 1\textwidth]{Filter2PlotLearningEffect.pdf}  
-  \caption[Results for Filter 1: Learning effect]{Results for Filter 1: Learning effect\footnotemark}
-    \label{fig:Results for Filter 1: Learning effect} 
-\end{center}
-\end{figure}
-\footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{NumberOfColours}.}
-
-\textbf{\textit{User} } The standard deviations of the User random intercepts are high and underline the influential magnitude of the individual characteristics on the performances of the participants. In particular, the \textit{DecisionNumber} and \textit{DecisionTime} seems to be most affected by the individual, since the relative standard deviation is the highest for all variables. 
+\textbf{\textit{NumberOfColours} } The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}  - they all have significant parameter estimations for all parameters. So the hypothesis, that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours}, he or she is facing is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a polynomial relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}.
 
 \afterpage{
 \begin{landscape}
@@ -429,7 +407,30 @@ $\sigma$: Residual         &     5.50   &    3.19   &    3.40    &       14.09& 
 \label{table:coefficients}
 \end{center}
 \end{table}
-\end{landscape}}
+\end{landscape}} 
+\begin{figure}[H] % Filter1PlotColoursFirstResult	
+\begin{center}
+\includegraphics[width = 1\textwidth]{Filter2PlotInformationGranularity.pdf}    
+  \caption[Results for Filter 1: Information Granularity]{Results for Filter 1: Information Granularity\footnotemark}
+    \label{fig:Results for Filter 1: Information Granularity} 
+\end{center}
+\end{figure}
+\footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{Round}.}
+
+\textbf{\textit{Round} }The learning effect, hence the influence of the \textit{Round}, is significant for all variables. So we can conclude that there is a learning effect when playing several rounds in the experiment, and the slope of this learning effect diminishes with the number of rounds played, as indicated by the logarithmic relation. Surprisingly, the number of decisions increases with the number of rounds, as supposed to the expected decline. \\
+Since the time it takes participants to reach the \textit{FinalResult} is represented by the product of \textit{DecisionNumber} and \textit{DecisionTime}, two opposing trends can be identified when describing the round effect on the \textit{FinalTime}. Whereas the number of decisions increases, the time to take a decision decreases. The \ac{LMM} returns a negative parameter for \textit{FinalTime},  indicating that the decrease in the decision times outbalances the increase in the number of decisions.  
+
+\begin{figure}[H] % Filter1PlotColoursFirstResult	
+\begin{center}
+\includegraphics[width = 1\textwidth]{Filter2PlotLearningEffect.pdf}  
+  \caption[Results for Filter 1: Learning effect]{Results for Filter 1: Learning effect\footnotemark}
+    \label{fig:Results for Filter 1: Learning effect} 
+\end{center}
+\end{figure}
+\footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{NumberOfColours}.}
+
+\textbf{\textit{User} } The standard deviations of the User random intercepts are high and underline the influential magnitude of the individual characteristics on the performances of the participants. In particular, the \textit{DecisionNumber} and \textit{DecisionTime} seems to be most affected by the individual, since the relative standard deviation is the highest for all variables. 
+
 %
 %%\begin{landscape}
 %\begin{table}
@@ -468,7 +469,7 @@ $\sigma$: Residual         &     5.50   &    3.19   &    3.40    &       14.09& 
 %%\end{landscape}
 
 \paragraph{Filter 2: Filter 1 + \textit{NumberOfColours} $\geq$ 7}
-\textbf{\textit{NumberOfColours} } When only including the treatment groups that were assigned to 7, 11 and 15 colours, the parameter estimations become significant for \textit{FirstResult}, \textit{BestResult} and \textit{FinalResult}. The \textbf{$\cap$}-relation with \textit{NumberOfColours} is consequently confirmed when looking at this range of \textit{NumberOfColours}. These findings, however, do not support our hypothesis that the performance will be best on a medium information granularity, since a peak can be found for the 11-colours treatment. In addition, none of the previous findings for \textit{DecisionNumber} and \textit{DecisionTime} are confirmed in filter 2.\\
+\textbf{\textit{NumberOfColours} } When only including the treatment groups that were assigned to 7, 11 and 15 colours, the parameter estimations become significant for \textit{FirstResult}, \textit{BestResult} and \textit{FinalResult}. The \textbf{$\cap$}-relation with \textit{NumberOfColours} is consequently confirmed when looking at this range of \textit{NumberOfColours}. These findings, however, do not support our hypothesis that the performance will be best on a medium information granularity, since a peak can be found for the 11-colours treatment. In addition, none of the previous findings for \textit{DecisionNumber} and \textit{DecisionTime} are confirmed in Filter 2.\\
 \textbf{\textit{Round} } A learning effect can also be detected for this data set, with an exception of \textit{FirstResult} - the \ac{LMM} does not return significant results for its parameters. \\
 \textbf{\textit{User} } The standard deviation for the User random intercepts again shows high values so the exclusion of the variance caused by individual characteristics is successful.\\
 
