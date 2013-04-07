@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.6.2)  2 APR 2013 20:36
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.6.2)  7 APR 2013 16:02
 entering extended mode
 **thesis.tex
 
@@ -1648,13 +1648,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--394
 
  []
 
-
-Underfull \vbox (badness 6893) has occurred while \output is active []
-
- [21 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/
-ThesisGit/figures/DescriptivesFinalResult.pdf> <C:/Users/Chris/My Dropbox/Uni/W
-S2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesFinalTi
-me.pdf>]
+[21 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
+hesisGit/figures/DescriptivesFinalResult.pdf> <C:/Users/Chris/My Dropbox/Uni/WS
+2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/DescriptivesFinalTim
+e.pdf>]
 <./figures/DescriptivesDecisionNumber.pdf, id=852, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesDecisionNumber.pdf Graphic file (type pdf)
 
@@ -1688,43 +1685,40 @@ Chapter 4.
 LaTeX Warning: Reference `BoxCoxTransformation' on page 28 undefined on input l
 ine 285.
 
-<./figures/SkewKurtosis.pdf, id=955, 718.19574pt x 400.4359pt>
+<./figures/SkewKurtosis.pdf, id=958, 718.19574pt x 400.4359pt>
 File: ./figures/SkewKurtosis.pdf Graphic file (type pdf)
 
 <use ./figures/SkewKurtosis.pdf> [28]
-<./figures/PlotIntercept.pdf, id=978, 1156.32pt x 505.89pt>
+<./figures/PlotIntercept.pdf, id=981, 1156.32pt x 505.89pt>
 File: ./figures/PlotIntercept.pdf Graphic file (type pdf)
 
 <use ./figures/PlotIntercept.pdf> [29 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bac
 helorarbeit/[1] Laufende Version/ThesisGit/figures/SkewKurtosis.pdf>]
-Overfull \hbox (12.98845pt too wide) in paragraph at lines 353--354
+Overfull \hbox (12.98845pt too wide) in paragraph at lines 352--353
 [][] 
  []
 
 [30 <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/T
 hesisGit/figures/PlotIntercept.pdf>]
-<./figures/Filter2PlotInformationGranularity.pdf, id=1038, 722.7pt x 289.08pt>
+<./figures/Filter2PlotInformationGranularity.pdf, id=1041, 722.7pt x 289.08pt>
 File: ./figures/Filter2PlotInformationGranularity.pdf Graphic file (type pdf)
 
-<use ./figures/Filter2PlotInformationGranularity.pdf> [31 <C:/Users/Chris/My Dr
-opbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Filter2P
-lotInformationGranularity.pdf>] [32]
-<./figures/Filter2PlotLearningEffect.pdf, id=1059, 722.7pt x 289.08pt>
+<use ./figures/Filter2PlotInformationGranularity.pdf>
+<./figures/Filter2PlotLearningEffect.pdf, id=1044, 722.7pt x 289.08pt>
 File: ./figures/Filter2PlotLearningEffect.pdf Graphic file (type pdf)
 
-<use ./figures/Filter2PlotLearningEffect.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 472--475
+<use ./figures/Filter2PlotLearningEffect.pdf> [31 <C:/Users/Chris/My Dropbox/Un
+i/WS2012/Bachelorarbeit/[1] Laufende Version/ThesisGit/figures/Filter2PlotInfor
+mationGranularity.pdf>] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 472--478
 
  []
 
 
-<./figures/Filter3PlotInformationGranularity.pdf, id=1062, 722.7pt x 289.08pt>
+<./figures/Filter3PlotInformationGranularity.pdf, id=1065, 722.7pt x 289.08pt>
 File: ./figures/Filter3PlotInformationGranularity.pdf Graphic file (type pdf)
 
-<use ./figures/Filter3PlotInformationGranularity.pdf>
-Underfull \vbox (badness 5592) has occurred while \output is active []
-
- [33
+<use ./figures/Filter3PlotInformationGranularity.pdf> [33
 
 
  <C:/Users/Chris/My Dropbox/Uni/WS2012/Bachelorarbeit/[1] Laufende Version/Thes
@@ -1812,71 +1806,71 @@ l.59  } }
 
 
 ]
-<./figures/DescriptivesFirstResult.pdf, id=1133, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFirstResult.pdf, id=1139, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFirstResult.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFirstResult.pdf>
-<./figures/DescriptivesBestResult.pdf, id=1134, 1011.78pt x 433.62pt>
+<./figures/DescriptivesBestResult.pdf, id=1140, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesBestResult.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesBestResult.pdf>
-<./figures/DescriptivesFirstTime.pdf, id=1135, 1011.78pt x 433.62pt>
+<./figures/DescriptivesFirstTime.pdf, id=1141, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesFirstTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesFirstTime.pdf>
-<./figures/DescriptivesBestTime.pdf, id=1136, 1011.78pt x 433.62pt>
+<./figures/DescriptivesBestTime.pdf, id=1142, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesBestTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesBestTime.pdf>
-<./figures/DescriptivesDecisionTime.pdf, id=1137, 1011.78pt x 433.62pt>
+<./figures/DescriptivesDecisionTime.pdf, id=1143, 1011.78pt x 433.62pt>
 File: ./figures/DescriptivesDecisionTime.pdf Graphic file (type pdf)
 
 <use ./figures/DescriptivesDecisionTime.pdf>
-<./figures/HistogramQuestion1.pdf, id=1138, 441.30573pt x 352.05637pt>
+<./figures/HistogramQuestion1.pdf, id=1144, 441.30573pt x 352.05637pt>
 File: ./figures/HistogramQuestion1.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion1.pdf>
-<./figures/BoxplotQuestion1.pdf, id=1139, 424.05043pt x 318.68723pt>
+<./figures/BoxplotQuestion1.pdf, id=1145, 424.05043pt x 318.68723pt>
 File: ./figures/BoxplotQuestion1.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion1.pdf>
-<./figures/HistogramQuestion2.pdf, id=1140, 441.05377pt x 355.6264pt>
+<./figures/HistogramQuestion2.pdf, id=1146, 441.05377pt x 355.6264pt>
 File: ./figures/HistogramQuestion2.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion2.pdf>
-<./figures/BoxplotQuestion2.pdf, id=1141, 433.79788pt x 321.93726pt>
+<./figures/BoxplotQuestion2.pdf, id=1147, 433.79788pt x 321.93726pt>
 File: ./figures/BoxplotQuestion2.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion2.pdf>
-<./figures/HistogramQuestion3.pdf, id=1142, 439.30028pt x 362.00044pt>
+<./figures/HistogramQuestion3.pdf, id=1148, 439.30028pt x 362.00044pt>
 File: ./figures/HistogramQuestion3.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion3.pdf>
-<./figures/BoxplotQuestion3.pdf, id=1143, 442.32347pt x 315.84029pt>
+<./figures/BoxplotQuestion3.pdf, id=1149, 442.32347pt x 315.84029pt>
 File: ./figures/BoxplotQuestion3.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion3.pdf>
-<./figures/HistogramQuestion4.pdf, id=1144, 441.61052pt x 346.00737pt>
+<./figures/HistogramQuestion4.pdf, id=1150, 441.61052pt x 346.00737pt>
 File: ./figures/HistogramQuestion4.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion4.pdf>
-<./figures/BoxplotQuestion4.pdf, id=1145, 435.40532pt x 323.86958pt>
+<./figures/BoxplotQuestion4.pdf, id=1151, 435.40532pt x 323.86958pt>
 File: ./figures/BoxplotQuestion4.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion4.pdf>
-<./figures/HistogramQuestion5.pdf, id=1146, 440.86234pt x 356.0245pt>
+<./figures/HistogramQuestion5.pdf, id=1152, 440.86234pt x 356.0245pt>
 File: ./figures/HistogramQuestion5.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion5.pdf>
-<./figures/BoxplotQuestion5.pdf, id=1147, 435.55392pt x 321.29224pt>
+<./figures/BoxplotQuestion5.pdf, id=1153, 435.55392pt x 321.29224pt>
 File: ./figures/BoxplotQuestion5.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion5.pdf>
-<./figures/HistogramQuestion6.pdf, id=1148, 441.77428pt x 353.74187pt>
+<./figures/HistogramQuestion6.pdf, id=1154, 441.77428pt x 353.74187pt>
 File: ./figures/HistogramQuestion6.pdf Graphic file (type pdf)
 
 <use ./figures/HistogramQuestion6.pdf>
-<./figures/BoxplotQuestion6.pdf, id=1149, 413.1641pt x 321.21657pt>
+<./figures/BoxplotQuestion6.pdf, id=1155, 413.1641pt x 321.21657pt>
 File: ./figures/BoxplotQuestion6.pdf Graphic file (type pdf)
 
 <use ./figures/BoxplotQuestion6.pdf>) [40 <C:/Users/Chris/My Dropbox/Uni/WS2012
@@ -1942,14 +1936,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 18597 strings out of 495285
- 305833 string characters out of 3179828
- 424729 words of memory out of 3000000
+ 18603 strings out of 495285
+ 305869 string characters out of 3179828
+ 425729 words of memory out of 3000000
  20887 multiletter control sequences out of 15000+200000
  72780 words of font info for 140 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2032,9 +2023,9 @@ nts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/cm-super/s
 frm1095.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplb8a.
 pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on thesis.pdf (53 pages, 1647550 bytes).
+Output written on thesis.pdf (53 pages, 1648469 bytes).
 PDF statistics:
- 1546 PDF objects out of 1728 (max. 8388607)
- 268 named destinations out of 1000 (max. 500000)
+ 1553 PDF objects out of 1728 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
  501 words of extra memory for PDF output out of 10000 (max. 10000000)
 

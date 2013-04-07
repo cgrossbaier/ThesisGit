@@ -15,11 +15,11 @@ The knapsack experiment which is used to test the effects of information overloa
 
 In order to evaluate the data and extract statistical stress-able results, the appropriate choice of a statistical model is crucial. 
 \cite{Siegel1957} defined three main criteria to identify the most suitable statistical model:
-\begin{itemize}
+\begin{enumerate}
 \item The statistical model of the test should fit the conditions of the research.
 \item The measurement requirement of the test should be met by the measures used in the research.
 \item From among those tests with appropriate statistical models and appropriate measurement requirements, that test should be chosen which has greatest power-efficiency\footnote{The power of a test is being defined as the probability that the test will reject the null hypothesis when in fact it is false and should be rejected \citep{Siegel1957}. Thus, a statistical test is considered to be good if it has small probability of rejecting $H_0$ when $H_0$ is true, but a large probability of rejecting $H_0$ when it is false.}.
-\end{itemize}
+\end{enumerate}
 
 The conditions of the research are defined by a combination of two between-subjects and one within-subjects factors. \textit{Usergroup} and \textit{Trial} separate the treatments and the within-subjects factor \textit{Round} defines the number of observations recorded for each subject.
 Table \ref{tab:OverviewVariables} gives an overview of the examined variables. All variables fulfil the measurement requirements since all dependent variables are numerical and on a scale, and all independent variables are numerical and ordinal. \\
@@ -203,8 +203,8 @@ Subsequently, a \acf{LMM} is used to give parameter estimations to the combinati
 \label{ch:Evaluation:sec:Non-parametrictest}
 %% ===============================
 
-\ac{NP} are not based on a statistical model which specifies restrictive conditions \citep{Siegel1957}, thus \ac{NP} only make minimal assumptions regarding the underlying distribution of the data. Their advantages include the fact that the data does not have to be normally distributed. Furthermore, the tests rank the values instead of looking at the values themselves which makes them robust against outliers.\\
-Two different categories of tests are used; an independent-samples test, analysing the dependent variables that are grouped by \textit{NumberOfColours} and \textit{Trial}, and a test for related samples, comparing \textit{Rounds} for the same set of users. 
+\acl{NP}s are statistical models that do not specify restrictive conditions \citep{Siegel1957}, thus \ac{NP} only make minimal assumptions regarding the underlying distribution of the data. Their advantages include the fact that the data does not have to be normally distributed. Furthermore, the tests rank the values instead of looking at the values themselves which makes them robust against outliers.\\
+Two different categories of tests are used; an independent-samples test, analysing the dependent variables that are grouped by \textit{NumberOfColours} and \textit{Trial}; and a test for related samples, comparing \textit{Rounds} for the same set of users. 
 
 \subsection{Tests of Independent samples: \textit{NumberOfColours} \& \textit{Trial}}
 Two tests are conducted for the independent samples. The Kruskal-Wallis Test of Independent Samples\footnote{For the SPSS source code of the two tests, refer to this \href{http://publib.boulder.ibm.com/infocenter/spssstat/v20r0m0/topic/com.ibm.spss.statistics.help/alg_nonparametric_independent_wald-wolfowitz.htm}{Link}.}, comparing the distributions per \textit{NumberOfColours}, as well as the Mann-Whitney Test, which compares the two \textit{Trials} against each other.\\
@@ -274,17 +274,17 @@ Furthermore, not every dependent variable seems to be influenced by the independ
 %% ===============================
 
 %The results from the \ac{LMM} and the \ac{NP}s do not confirm the majority of the hypothesis. In fact, the findings have not confirmed an influence of \textit{Round} and \textit{NumberOfColours}, so one would assume that providing parameter estimates will not introduce further significant findings as well.\\
-For the purposes of testing the proposed polynomial relationship between the dependent variables and the \textit{NumberOfColours} as well as the logarithmic influence of \textit{Round}, we examine the data using a \acl{LMM}. \ac{LMM} are powerful modelling tools that allow the analysis of complex datasets with hierarchical structures \citep{Galecki2013}. As a result, the \acf{LMM} is an appropriate choice with a high power-efficiency for the conditions of our research.
+For the purposes of testing the proposed polynomial relationship between the dependent variables and the \textit{NumberOfColours} as well as the logarithmic influence of \textit{Round}, we examine the data using a \acl{LMM}. This model is a powerful modelling tool that allows the analysis of complex datasets with hierarchical structures \citep{Galecki2013}. As a result, the \acl{LMM} is an appropriate choice with a high power-efficiency for the conditions of our research.
 
 The term \textit{Mixed Model} refers to the use of both fixed and random effects in the same analysis \citep{Seltman2012}. Whereas fixed effects are essential to evaluate the potential polynomial relationship between the independent and dependent variables, random effects aggregate the influences which are not relevant for the purposes of this study. \\ 
 Fixed effects are usually related to treatments (\textit{NumberOfColours} and \textit{Trial}), whereas subject effects are defined as random effects (\textit{User}).\\
-Subject effects include the individual characteristics of the participants. These effects (e.g. experience with similar tasks or the general ability to perform well in the given task), have an influence on the result and and time variables, but are not the focus of our research. As described in Section \ref{ch:Experiment:sec:OnlineImplementation}, one implication for cognitive load experiments on \acf{AMT} is the lack of control over what participants are doing during the experiment. By taking into account these individual influences, and separating them from the focus of the research, the noise of the data can be reduced and can return more significant results.
+Subject effects include the individual characteristics of each participant. These effects (e.g. experience with similar tasks or the general ability to perform well in the given task), have an influence on the result and time variables, but are not the focus of our research. As described in Section \ref{ch:Experiment:sec:OnlineImplementation}, one implication for cognitive load experiments on \acf{AMT} is the lack of control over what participants are doing during the experiment. By taking into account these individual influences, and separating them from the focus of the research, the noise of the data can be reduced and can return more significant results.
 
 \paragraph{Normality Assumption}
 The normality assumption is not met by the original data, so a data transformation is necessary.
-We use the Box-Cox transformation\footnote{See Equation \ref{BoxCoxTransformation} in Appendix \ref{Appendix-Formulas} for the formula.} \citep{Sakia1992}, that applies a shifted power transformation to adjust the standard deviation and the mean to the requested values for the normal distribution. Since the method is using a range of power transformations, the efficiency of normalizing and variance equalizing for both positively- and negatively-skewed variables can be improved \citep{Osborne2010}. In order to find the optimal input parameter $\lambda$ for the transformation, we implement Osborne's SPSS algorithm. \\
+We use the Box-Cox transformation\footnote{See Equation \ref{BoxCoxTransformation} in Appendix \ref{Appendix-Formulas} for the formula.} \citep{Sakia1992} that applies a shifted power transformation to adjust the standard deviation and the mean to the requested values for the normal distribution. Since the method is using a range of power transformations, the efficiency of normalizing and variance equalizing for both positively- and negatively-skewed variables can be improved \citep{Osborne2010}. In order to find the optimal input parameter $\lambda$ for the transformation, we implement Osborne's SPSS algorithm. \\
 We find suitable $\lambda$-values for the variables \textit{FirstTime} and \textit{DecisionTime}. Nevertheless, no adequate values can be found for all result types, namely \textit{BestTime}, \textit{FinalTime} and \textit{DecisionNumber}.
-Figure \ref{fig:SkewKurtosis} provides an explanation for the lack of appropriate $\lambda$-values in the \textit{FirstResult}. No $\lambda$-values can be found that reduces the skewness and kurtosis of the transformed data to a a limit at which one can assume a normal distribution. Similar results are returned for \textit{BestResult}, \textit{FinalResult}, \textit{BestTime} and \textit{FinalTime}.
+Figure \ref{fig:SkewKurtosis} provides an explanation for the lack of appropriate $\lambda$-values in the \textit{FirstResult}. No $\lambda$-values can be found that reduce the skewness and kurtosis of the transformed data to a limit at which one can assume a normal distribution. Similar results are returned for \textit{BestResult}, \textit{FinalResult}, \textit{BestTime} and \textit{FinalTime}.
 \begin{figure}[htbp] % Transformation	
 \begin{center} 
 \includegraphics[height = 0.30\textwidth]{SkewKurtosis.pdf}
@@ -292,8 +292,7 @@ Figure \ref{fig:SkewKurtosis} provides an explanation for the lack of appropriat
     \label{fig:SkewKurtosis} 
 \end{center}
 \end{figure}
-
-In addition, a test of Normality proves the previous findings that a Box-Cox-transformation is only suitable for \textit{FirstTime} and \textit{DecisionTime}. Since we have a data set smaller than 2000 elements, the Shapiro-Wilk test \citep{Shapiro1965} is used to test the null hypothesis which states that the observed population does not come from a normal distribution. The p-value is greater than .05 only for \textit{FirstTime} and \textit{DecisionTime}, so we must retain the null hypothesis for all other variables and conclude that only the data transformation of \textit{FirstTime} and \textit{DecisionTime} comes from a normal distribution.
+In addition, a test of Normality proves our previous findings that a Box-Cox-transformation is only suitable for \textit{FirstTime} and \textit{DecisionTime}. Since we have a data set smaller than 2000 elements, the Shapiro-Wilk test \citep{Shapiro1965} is used to test the null hypothesis which states that the observed population does not come from a normal distribution. The p-value is greater than 0.05 only for \textit{FirstTime} and \textit{DecisionTime}, so we must retain the null hypothesis for all other variables and conclude that only the data transformation of \textit{FirstTime} and \textit{DecisionTime} comes from a normal distribution.
 
 %\textbf{2. Constant covariance matrix: \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}{\color{red}x}}}\\
 %The Box's M test statistic \citep{Box1949} conducted on SPSS tests the null hypothesis that the observed covariance matrices of the dependent variables are not equal across groups. The significance value of the test is less than .10, suggesting that the assumptions are not met and the covariance matrix does differ across usergroups.\\
@@ -302,12 +301,12 @@ In addition, a test of Normality proves the previous findings that a Box-Cox-tra
 %The test shows no significant value for the majority of the variables on the .10 significance level and is not significant on the .05 level for two variables. As a result, the null hypothesis can be rejected and we can assume that the equal variances assumption is not violated for each variable.
 \paragraph{Conclusion}
 The validity of the results based on the \ac{LMM} depends on whether or not its conditions are met \citep{Siegel1957}. Since the normality assumption is not fulfilled for the majority of the variables, the addressed power of the \ac{LMM} might be diluted. \\
-According to \cite{Graybill1976}, we can either ignore the violation of the assumptions and proceed with the analysis as if all assumptions are satisfied, or we can use a distribution-free procedure. \\
-A distribution-free procedure in the form of non-parametric tests is used in Section \ref{ch:Evaluation:sec:Non-parametrictest}. Yet, these tests do not give information about the underlying distribution and potential parameter estimations.
+According to \cite{Graybill1976}, we can either ignore the violation of the assumptions and proceed with the analysis as if all assumptions were satisfied, or we can use a distribution-free procedure. \\
+A distribution-free procedure in the form of non-parametric tests is used in Section \ref{ch:Evaluation:sec:Non-parametrictest}. Yet, these tests do not give information about potential parameter estimations for an implemented model.
 Therefore, we continue analysing the data using the \ac{LMM}.
 
 \subsection{Choice of a \ac{LMM} model}
-Specifying a mixed model requires several steps, each of which requires an informed choice \citep{Seltman2012}. \\
+Specifying a mixed model requires several steps, each of which requires an informed decision \citep{Seltman2012}. \\
 First, the identification of  fixed effects requires the specification of which influences affect the average performances for all individuals.  We assume that the level of \textit{NumberOfColours} and the \textit{Round} number affects each participant.
 The \acl{NP} in Section \ref{ch:Evaluation:sec:Non-parametrictest} do not show any significant influence on the population mean from the \textit{Trial}, so we do not take this variable into consideration as a fixed effect.\\
 \begin{figure}[htbp] % RandomIntercept	
@@ -355,7 +354,7 @@ DependentVariable_{i,j} = \quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\qua
 \subsection{Implementation in R}
 
 For the implementation of the \ac{LMM}s we use the \textbf{nlme}-package of the software programming language \textbf{R}\footnote{Refer to \cite{R2012}.} . The package is especially designed for \ac{LMM}s  \citep{Pinheiro2013} and fits a linear mixed-effects model in the formulation described by \cite{Laird1982}.\\
-The model described in \ref{eq:LMM} is implemented in the following code:
+The model described in \ref{eq:LMM} is implemented using the following code:
 \begin{verbatim}
 > LMM <- lme(DV ~ 1 + NumberOfColours + NumberOfColours2 + RoundL, 
 +               random=~1 | User, 
@@ -368,7 +367,8 @@ According to the conclusions for the \acl{NP}' results, only the filtered data i
 The results for the fixed effects of the \ac{LMM} can be interpreted in the same way as an ANOVA regression. Nevertheless, we must take into account that the intercept represents the mean over all subjects and each individual subject has its own individual intercept \citep{Seltman2012}. The population made up by all individual intercepts approximately follows a normal distribution, with the computed overall estimate as the mean and the variance of the random intercepts (Figure \ref{fig:Intercepts}).
 
 \paragraph{Filter 1: Users with \textit{BestResult} $\geq$ 80\% for each round}
-\textbf{\textit{NumberOfColours} } The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}  - they all have significant parameter estimations for all parameters. So the hypothesis, that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours}, he or she is facing is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a polynomial relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}.
+\textbf{\textit{NumberOfColours} }\\
+The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}.  Moreover, they all have significant parameter estimations for all parameters. So the hypothesis that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours} is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a polynomial relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}.
 
 \afterpage{
 \begin{landscape}
@@ -417,9 +417,9 @@ $\sigma$: Residual         &     5.50   &    3.19   &    3.40    &       14.09& 
 \end{figure}
 \footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{Round}.}
 
-\textbf{\textit{Round} }The learning effect, hence the influence of the \textit{Round}, is significant for all variables. So we can conclude that there is a learning effect when playing several rounds in the experiment, and the slope of this learning effect diminishes with the number of rounds played, as indicated by the logarithmic relation. Surprisingly, the number of decisions increases with the number of rounds, as supposed to the expected decline. \\
+\textbf{\textit{Round} }\\
+The learning effect, hence the influence of the \textit{Round}, is significant for all variables. So we can conclude that there is a learning effect when playing several rounds in the experiment, and the slope of this learning effect diminishes with the number of rounds played, as indicated by the logarithmic relation. Surprisingly, the number of decisions increases with the number of rounds, as supposed to the expected decline. \\
 Since the time it takes participants to reach the \textit{FinalResult} is represented by the product of \textit{DecisionNumber} and \textit{DecisionTime}, two opposing trends can be identified when describing the round effect on the \textit{FinalTime}. Whereas the number of decisions increases, the time to take a decision decreases. The \ac{LMM} returns a negative parameter for \textit{FinalTime},  indicating that the decrease in the decision times outbalances the increase in the number of decisions.  
-
 \begin{figure}[H] % Filter1PlotColoursFirstResult	
 \begin{center}
 \includegraphics[width = 1\textwidth]{Filter2PlotLearningEffect.pdf}  
@@ -428,8 +428,8 @@ Since the time it takes participants to reach the \textit{FinalResult} is repres
 \end{center}
 \end{figure}
 \footnotetext{The values for the dependent variables are adjusted so they exclude the predicted effect by \textit{NumberOfColours}.}
-
-\textbf{\textit{User} } The standard deviations of the User random intercepts are high and underline the influential magnitude of the individual characteristics on the performances of the participants. In particular, the \textit{DecisionNumber} and \textit{DecisionTime} seems to be most affected by the individual, since the relative standard deviation is the highest for all variables. 
+\textbf{\textit{User} }\\
+The standard deviations of the \textit{User} random intercepts are high, and underline the influential magnitude of the individual performance characteristics of the participants. In particular, the \textit{DecisionNumber} and \textit{DecisionTime} seem to be most affected by the individual, since the relative standard deviation is the highest for all variables. 
 
 %
 %%\begin{landscape}
@@ -469,9 +469,12 @@ Since the time it takes participants to reach the \textit{FinalResult} is repres
 %%\end{landscape}
 
 \paragraph{Filter 2: Filter 1 + \textit{NumberOfColours} $\geq$ 7}
-\textbf{\textit{NumberOfColours} } When only including the treatment groups that were assigned to 7, 11 and 15 colours, the parameter estimations become significant for \textit{FirstResult}, \textit{BestResult} and \textit{FinalResult}. The \textbf{$\cap$}-relation with \textit{NumberOfColours} is consequently confirmed when looking at this range of \textit{NumberOfColours}. These findings, however, do not support our hypothesis that the performance will be best on a medium information granularity, since a peak can be found for the 11-colours treatment. In addition, none of the previous findings for \textit{DecisionNumber} and \textit{DecisionTime} are confirmed in Filter 2.\\
-\textbf{\textit{Round} } A learning effect can also be detected for this data set, with an exception of \textit{FirstResult} - the \ac{LMM} does not return significant results for its parameters. \\
-\textbf{\textit{User} } The standard deviation for the User random intercepts again shows high values so the exclusion of the variance caused by individual characteristics is successful.\\
+\textbf{\textit{NumberOfColours} }\\
+When only including the treatment groups that were assigned to 7, 11 and 15 colours, the parameter estimations become significant for \textit{FirstResult}, \textit{BestResult} and \textit{FinalResult}. The \textbf{$\cap$}-relation with \textit{NumberOfColours} is consequently confirmed when looking at this range of \textit{NumberOfColours}. These findings, however, do not support our hypothesis that the performance will be best on a medium information granularity, since a peak can be found for the 11-colours treatment. In addition, none of the previous findings for \textit{DecisionNumber} and \textit{DecisionTime} are confirmed in Filter 2.\\
+\textbf{\textit{Round} }\\
+ A learning effect can also be detected for this data set, with an exception of \textit{FirstResult} - the \ac{LMM} does not return significant results for its parameters. \\
+\textbf{\textit{User} }\\
+The standard deviation for the \textit{User} random intercepts again show high values yet again, so the impact of excluding the variance caused by individual characteristics is underlined.\\
 
 \begin{figure}[H] % Filter1PlotColoursFirstResult	
 \begin{center}

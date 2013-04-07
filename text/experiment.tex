@@ -284,13 +284,13 @@ Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{
   \label{Data}
 \end{center}
 \end{figure}
-Out of the 400 participants there are 1.257 played rounds recorded (refer to Figure \ref{Data}). The fact that the recorded number of rounds outnumbers the potential 1.200 rounds from 400 participants, can be explained explained using two cases. First the functionality test rounds conducted by the research team while the game was running and second by participants playing one or two rounds, then dropping out of the experiment. These cases can be identified by looking at the payout of the user, since there was no payout made to users who did not complete all rounds. Consequently, we will exclude the rounds of those users who did not achieve a payout greater than 0.\\
-The next step is to identify the users who played the game again and again, and have skewed the observation independence as described in Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}. 32 users are found who share both their IP with at least one other user and who achieved a payout greater than 0. The payout filter does not exclude those users who committed only once to the experiment and therefore only reached a payout greater than 0 once. \\
+Out of a potential 1.200 rounds per 400 participants, there are 1257 played rounds recorded (refer to Figure \ref{Data}). The fact that the recorded number of rounds outnumbers the potential 1.200 rounds, can be explained using two cases. First the functionality test rounds conducted by the research team while the game was running and second by participants playing one or two rounds, then dropping out of the experiment. These cases can be identified by looking at the payout of the user, since there was no payout made to users who did not complete all rounds. Consequently, we will exclude the rounds of those users who did not achieve a payout greater than 0.\\
+The next step is to identify the users who played the game again and again, and therefore have skewed the observation independence as described in Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}. 32 users are found who share both their IP with at least one other user and who achieved a payout greater than 0. The payout filter does not exclude those users who committed only once to the experiment and therefore only reached a payout greater than 0 once. \\
 The data of 6 participants showed errors, e.g. a total game time per round greater than 100s or a result greater than 100\%. Since we were not able to trace the origin of these errors, we will exclude these users from the data set.
-As a result, 349 users with a total of 1046 rounds build the data for the statistical analysis.\\
+As a result, 349 users with a total of 1.046 rounds build the data for the statistical analysis.\\
 Within the data used for the analysis, there are two further filters applied.
-These filters are used to focus on the participants who made an effort to succeed in the game. As stated in Section \ref{ch:Experiment:sec:DataacquisitionDescriptives:subsec:DescriptiveStatistics}, a performance lower than 80\% per round can be explained by a lack of effort or understanding on the participant's side. By including the whole range of performances in the parameter estimation, the statistical noise might dilute the inductive value of the study. Consequently, we only concentrate on participants who were able to achieve a result greater or equal to 80\% for each round. This filter leaves a data set is consisting of 174 users with a total of 522 rounds recorded. We will refer to this filter as \textbf{Filter 1}.\\
-In a second step, users who are assigned to a treatment group with less than 7 colours are excluded. This is due to statistical implications of the data since significant results can be seen for the three remaining treatments. After applying both filters, the data sets is made up by 110 users with 330 rounds recorded. We will refer to this data set as \textbf{Filter 2}.
+These filters are used to focus on the participants who made an effort to succeed in the game. As stated in Section \ref{ch:Experiment:sec:DataacquisitionDescriptives:subsec:DescriptiveStatistics}, a performance lower than 80\% per round can be explained by a lack of effort or understanding on the participant's side. By including the whole range of performances in the parameter estimation, the statistical noise might dilute the inductive value of the study. Consequently, we only concentrate on participants who were able to achieve a result greater than or equal to 80\% for each round. This filter leaves a data set consisting of 174 users with a total of 522 rounds recorded. We will refer to this filter as \textbf{Filter 1}.\\
+In a second step, users who are assigned to a treatment group with less than 7 colours are excluded. This is due to statistical implications of the data since significant results can be seen for the three remaining treatments. After applying both filters, the data set is made up of 110 users with 330 rounds recorded. We will refer to this data set as \textbf{Filter 2}.
 %
 %
 %Before starting the analysis, an additional implication of \acf{AMT} is taken into consideration. Cognitive load experiments conducted to the \acf{AMT} platform run the risk that users might not commit their full attention on the task (rf. to Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}) and therefore may experience a different information overload than the users who give their full attention to the task. We try to determine these users by looking at the time it takes them to fill up the knapsack for the first time. Users who just randomly select boxes and quickly fill up the knapsack have a very low time until they first reach a full knapsack. A time border of 5 seconds is chosen to separate these users and the filtered data is excluded from the data set.
@@ -313,7 +313,7 @@ In a second step, users who are assigned to a treatment group with less than 7 c
 \footnotetext{Outliers with a time greater than 11 minutes on each stage are excluded for the purposes of this graph due to better readability. }
 
 The tracked time logs for the participants  (Figure \ref{Time spent on different stages of experiment}) show that individuals spent a considerable amount of time on the explanation and the Trial round. The total game length is defined by 5 minutes, and the majority of participants complete the game in less than the maximum time. A value greater than 5 minutes can be explained by the information box that pops up before the beginning of the game. The countdown for the current round only starts after participants click on the information box to start the round, resulting in a total game duration longer than 5 minutes when participants do not click instantly on the info box.
-The questionnaire is the shortest of the stages. We set a minimum time of 15 seconds, corresponding to .25 minutes, to fill out the questionnaire - the majority of individuals spent between 30 to 60 seconds on the questionnaire section.
+The questionnaire is the shortest of the stages. We set a minimum time of 15 seconds, corresponding to 0.25 minutes, to fill out the questionnaire - the majority of individuals spent between 30 and 60 seconds on the questionnaire section.
 
 %% ===============================
 \paragraph{Feedback from participants}
@@ -353,8 +353,8 @@ The participants were randomly and uniformly assigned to one treatment once they
 \end{table}%
 \footnotetext{See Appendix \ref{Appendix-Formulas} for the formulas.}
 
-The distribution of payout presented in Figure \ref{Distributionofpayout} shows that the medians of the payout per treatment is decreasing with the \textit{NumberOfColours} in Trial 1, whereas an inverted U-Shape can be detected for the medians in Trial 2, with a peak at the medium 7-colours level.\\
-28\% of all users achieved the minimum payout of each Trial, and 72\% reached the bonus bar. The highest payout is \$0.44 accomplished in Trial 1, and \$0.55 in Trial 2. 
+The distribution of the payout presented in Figure \ref{Distributionofpayout} shows that the medians of the payout per treatment are decreasing with the \textit{NumberOfColours} in Trial 1, whereas an inverted U-Shape can be detected for the medians in Trial 2, with a peak at the medium 7-colour level.\\
+28\% of all users achieved the minimum payout for each Trial, and 72\% reached the bonus bar. The highest payout is \$0.44 accomplished in Trial 1, and \$0.55 in Trial 2. 
 
  \begin{figure}[htbp] % Distributionofpayout
 \begin{center} 
@@ -367,9 +367,9 @@ The distribution of payout presented in Figure \ref{Distributionofpayout} shows 
 \paragraph{Performance}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Performance}
 The characteristics of the histograms for all result types show a similar shape\footnote{Figure \ref{DistributionFinalResult} (left) shows the histogram for the \textit{FinalResult}, see Appendix \ref{Appendix-Descriptive} for Histograms and Boxplots for \textit{FirstResult} and \textit{BestResult}.}. The average result lies between 75\% for the \textit{FirstResult} and 79\% for the \textit{BestResult}. The relative standard deviation is high with values greater than 23\%, and the standard deviation is just below 20. 
-The population for all result types are negatively skewed with a value between --1.29 and --1.58, and the kurtosis is positive in the range of 1.4 and 2.4. The modal group can be found between 85\% and 95\%.\\
-As indicated by the histograms, there is a lot of noise in the data, where values below 80\% are likely to be related to a minimum effort. Therefore, the statistical potential by excluding the low performers is emphasized.
-The distribution of the different result types among different treatments is exemplary, as shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
+The population for all result types are negatively skewed with a value between --1.29 and --1.58, and the kurtosis is positive in the range of 1.4 to 2.4. The modal group can be found between 85\% and 95\%.\\
+As indicated by the histograms, there is a lot of noise in the data, where values below 80\% are likely to be related to a minimum effort. Therefore, the statistical potential is emphasized by excluding the low performers.
+The distribution of the different result types among different treatments is exemplary shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
 \begin{figure}[htbp] % DistributionFinalResult
 \begin{center} 
   \includegraphics[width = 1\textwidth]{DescriptivesFinalResult.pdf}
@@ -381,7 +381,7 @@ Significant outliers can be found in all treatments except for the treatment wit
 
 \paragraph{Time}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Time}
-The histograms of the different time types differ. Whereas \textit{FirstTime} shows a positively skewed distribution, \textit{BestTime} seems to be close to a uniform distribution. \textit{FinalTime} has a negative skewed population and \textit{DecisionTime} looks like like the results are normally distributed. The majority of participants reached the \textit{FirstResult} under 40s, and finished the round mostly in over 80s. Since only a minority played the full time, the use of the "Next"-button seemed to be popular. No specific time can be identified when participants were most likely to reach their \textit{BestResult}.\\
+The histograms of the different time types differ. Whereas \textit{FirstTime} shows a positively skewed distribution, \textit{BestTime} seems to be closer to a uniform distribution. \textit{FinalTime} has a negatively skewed population and \textit{DecisionTime} looks like the results are normally distributed. The majority of participants reached the \textit{FirstResult} in under 40 seconds, and finished the round mostly in over 80 seconds. Since only a minority played the full time, the use of the "Next"-button seemed to be popular. No specific time can be identified when participants were most likely to reach their \textit{BestResult}.\\
 \begin{figure}[H] % DistributionFinalTime
 \begin{center} 
 \includegraphics[width = 1\textwidth]{DescriptivesFinalTime.pdf}
@@ -394,7 +394,7 @@ The interquartile range is similar among all treatments for the \textit{BestTime
 
 
 \paragraph{Decision time and number}
-The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to 6s for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants showed between 5 and 40 clicks on boxes per round. The box plot for \textit{DecisionNumber} show outliers for every treatment, resulting in a range from less than 10 until up to 90 clicks per round.
+The box plots for \textit{DecisionTime} show a wide range, from below 0 seconds to up to 6 seconds for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants clicked between 5 and 40 times on boxes per round. The box plot for \textit{DecisionNumber} shows outliers for every treatment, resulting in a range of less than 10 clicks up until 90 clicks per round.
 
 \begin{figure}[htbp] % DistributionDecisionNumber
 \begin{center} 
@@ -408,12 +408,12 @@ The box plots of \textit{DecisionTime} show a wide range, from below 0s to up to
 \paragraph{Questionnaire}
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Questionnaire}
 
-Figure \ref{ProfilePlot} summarizes the medians for all the answers per treatment. In general, the medians for all treatments show similar values, so the different treatments do not seem to have an influence on the answers.\\
-The mental demand for the task is described as high(5) for all \textit{NumberOfColours} and the pace of the task is defined as a medium to rather high. 
-Most of the participants indicate their performance as rather successful and define their effort for accomplishing their level of performance as high.\\  
-There are no significant signs for negative emotions like insecurity and irritation triggered by the experiment, since all treatments indicate a low level of negative emotions. 
-Most individuals define "colour" (2) as the main box attribute they were looking at to reach their end result. A high number of individuals take into consideration a combination of the box size and box colour(3) to reach their end result.
-The box size (1) is considered by only a small minority of participants, and other strategies(4) or no strategy(5) have only a minor influence on individuals. 
+Figure \ref{ProfilePlot} summarizes each treatment's medians for all the answers. In general, the medians for all treatments show similar values, so the different treatments do not seem to have an influence on the answers.\\
+The mental demand for the task is described as high(5) for all \textit{NumberOfColours} and the pace of the task is defined as medium to rather high. 
+Most of the participants rate their performance as rather successful and define their effort for accomplishing their level of performance as high.\\  
+There are no significant signs for negative emotions like insecurity or irritation triggered by the experiment, since all treatments indicate a low level of negative emotions. 
+Most individuals define "colour" (2) as the main box attribute they are looking at to reach their end result. A high number of individuals take into consideration a combination of the box size and box colour(3) to reach their end result.
+The box size (1) is favoured by only a small minority of participants, and other strategies(4) or no strategy(5) have only a minor influence on individuals. 
 
 %\begin{landscape}
  \begin{figure}[htbp] % ProfilePlotAnswer
@@ -434,10 +434,10 @@ The box size (1) is considered by only a small minority of participants, and oth
 
 % ===============================
 \paragraph{Correlation of variables}
-Figure \ref{Correlation} concludes the correlation between all the variables. The bigger the size of the circles, the greater the magnitude of the correlation. The green colour represents a positive correlation, the red colour represents a negative linear correlation, so big green circles refer to a high positive linear correlation.\\
-The two main correlation groups which can be identified as the different result types and the different time types both show a high correlation. The correlation between these two groups is smaller, but still positive. This result indicates that the more time a participant takes for completing the round, the more successful he or she is, vice versa.\\
-The linear correlation between the time and result variables, and the independent variables \textit{Round} and \textit{NumberOfColours}, is only small, yet the \textit{DecisionTime} shows a higher positive correlation for the \textit{NumberOfColours} and a negative correlation for \textit{Round}. In other words, the more colours that are added to the game, the more time it takes the participant on average to make a decision and the decision time decreases over the rounds played.\\
-The \textit{DecisionNumber} is positively correlated with the result and time variables, showing the highest correlation value for \textit{FinalTime} and \textit{BestTime}.
+Figure \ref{Correlation} illustrates the correlation between all the variables. The bigger the size of the circles, the greater the magnitude of the correlation. The green colour represents a positive correlation and the red colour represents a negative linear correlation, so big green circles refer to a high positive linear correlation.\\
+The two main correlation groups can be identified as the different result and time types and they both show a high correlation. The correlation between these two groups is smaller than within the groups, but is still positive. This result indicates that the more time a participant takes for completing the round, the more successful he or she will be, and vice versa.\\
+The linear correlation between the time and result variables, and the independent variables \textit{Round} and \textit{NumberOfColours}, is only small, yet the \textit{DecisionTime} shows a higher positive correlation for the \textit{NumberOfColours} and a more negative correlation for \textit{Round}. In other words, the more colours that are added to the game, the more time it takes the participant, on average, to make a decision, and the decision time decreases over the rounds played.\\
+The \textit{DecisionNumber} is positively correlated to the result and time variables, showing the highest correlation value for \textit{FinalTime} and \textit{BestTime}.
 
  \begin{figure}[htbp] % 130315_CorrelationAction
 \begin{center} %130315_CorrelationAction
@@ -448,4 +448,4 @@ The \textit{DecisionNumber} is positively correlated with the result and time va
 \end{figure}
 
 The correlation between the mental demand of the task (Question 1) and the level of how hard participants work to accomplish the task (Question 4) is the highest for all answers' correlations, even though it indicates only a medium correlation. Smaller but still positive correlations with the mental demand, can be identified for the pace of the task (Question 2) and the level of negative emotions (Question 5).\\
-A small negative correlation is detectable for Question 1, Question 4 and Question 5, and the performance variables. Therefore, participants with a higher result indicate a lower mental demand, a lower level of effort and a lower level of negative emotions. Interestingly, the correlation matrix does not show a high correlation between how successful the participants are and how successful they feel (Question 2). 
+A small negative correlation is detectable for Question 1, Question 4 and Question 5, as well as the performance variables. Therefore, participants with a higher result indicate a lower mental demand, a lower level of effort and a lower level of negative emotions. Interestingly, the correlation matrix does not show a high correlation between how successful the participants are and how successful they feel (Question 2). 

@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {3.5}Data Descriptives}{19}{section.3.5}
 \contentsline {paragraph}{Treatments and payout}{19}{section*.21}
 \contentsline {paragraph}{Performance}{20}{section*.22}
-\contentsline {paragraph}{Time}{20}{section*.23}
+\contentsline {paragraph}{Time}{21}{section*.23}
 \contentsline {paragraph}{Decision time and number}{22}{section*.24}
 \contentsline {paragraph}{Questionnaire}{22}{section*.25}
 \contentsline {paragraph}{Correlation of variables}{22}{section*.26}
@@ -56,8 +56,8 @@
 \contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{33}{section*.32}
 \contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
 \contentsline {paragraph}{\acf {AMT} and the quality of data}{35}{section*.33}
-\contentsline {paragraph}{The \textit {FirstResult} is the best on a medium level of information granularity, \textit {DecisionTime} shows a maximum and \textit {DecisionNumber} a minimum.}{35}{section*.34}
-\contentsline {paragraph}{Learning Effect has a influence on the performance and the game time}{36}{section*.35}
+\contentsline {paragraph}{The \textit {FirstResult} is the best on a medium level of information granularity, \textit {DecisionTime} shows a maximum and \textit {DecisionNumber} a minimum}{35}{section*.34}
+\contentsline {paragraph}{Learning Effect has an influence on both the performance and the game time}{36}{section*.35}
 \contentsline {paragraph}{Individual characteristics affect the performance}{36}{section*.36}
 \contentsline {paragraph}{A higher leverage on the bonus does not improve performances.}{37}{section*.37}
 \contentsline {paragraph}{Limitations of the experiment}{37}{section*.38}
