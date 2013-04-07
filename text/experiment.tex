@@ -40,7 +40,7 @@ v_j := \text{value of item j} \quad w_j := \text{weight of item j}
 \end{table}%
 Table \ref{tab:KnapsackParamters} shows the given parameters for the considered 0-1 knapsack problem. The width of the knapsack, or the pixel width, represents the given weight restriction for the problem. There are 100 items to choose from and the weight of each item ranges from 20 to 80 units, and the benefit is defined as a number between 0 and 80.
 
-Since the knapsack problem is an NP-hard problem, individuals are faced with a high rate of complexity, which involves its optimization in reasonable time. A "greedy approach" is used to model a potential approach used by participants to tackle the optimization.
+Since the knapsack problem is an NP-hard problem, individuals are faced with a high rate of complexity and are further challenged with finding a solution in reasonable time. A "greedy approach" is used to model a potential game strategy used by participants to tackle the optimization.
 The optimal solution is calculated by a pseudo-polynomial time algorithm using dynamic programming.
 
 %% ===========================
@@ -60,11 +60,11 @@ Sort items according to the ratio in descending order\;
 
 knapsackSize=0, knapsackValue=0\;
 
- \For{item in item}{
-    \If{knapsackSize+element.weight $\leq$ W}{
-  	 knapsackValue+= element.benefit\;
+ \For{item in items}{
+    \If{knapsackSize+item.weight $\leq$ W}{
+  	 knapsackValue+= item.benefit\;
   	 
-	 knapsackSize += element.weight\;
+	 knapsackSize += item.weight\;
    }
  }
 \Return knapsackValue\;
@@ -74,7 +74,7 @@ knapsackSize=0, knapsackValue=0\;
 
 \paragraph{Dynamic Programming Algorithm}
 \label{par:DynamicProgrammingAlgorithm}
-Since there are no existing strategies using the greedy approach that can be used to find the most efficient, optimal solution for the knapsack problem, a different approach is used to calculate the optimal solution. The \ac{DPA} introduced by \cite{Kleinberg2005}  divides the problem into sub problems and can be solved in O(nW) time with W being the maximum weight of the knapsack.\\
+Since the greedy approach does not guarantee to find the most efficient, optimal solution for the knapsack problem, a different approach is used to calculate the optimal solution. The \ac{DPA} introduced by \cite{Kleinberg2005}  divides the problem into sub problems and can be solved in O(nW) time with W being the maximum weight of the knapsack.\\
 
 \begin{algorithm} % Dynamic Programming
 \LinesNumbered
@@ -173,10 +173,10 @@ x = \dfrac{\text{Current value of all boxes in knapsack}}{\text{\ac{DPA} solutio
 
 \paragraph{Payout}
 
-In correspondence to the result, participants receive monetary compensation for playing the current round. Every time the bonus bar \footnote{Refer to Subsection \ref{ch:Experiment:sec:Interface:subsec:Payout scheme}.} is reached, the toolbox turns green to get the participant's attention to further work on improving the result.
+In correspondence to the result, participants receive monetary compensation for playing the current round. Every time the bonus bar\footnote{Refer to Subsection \ref{ch:Experiment:sec:Interface:subsec:Payout scheme}.} is reached, the toolbox turns green to get the participant's attention to further work on improving the result.
 
 \paragraph{Time}
-The time restriction is set to 100 seconds per round. This rather long duration is chosen because participants should not experience a significant time pressure. The main goal is to isolate the colour effect; a potential time pressure effect is not the focus of the research since time routinely has an impact on the decision quality \citep{Hahn2006}. A time limitation, however, must be implemented to ensure that it is necessary to play the round in one sitting (refer to subsection  \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}).
+The time restriction is set to 100 seconds per round. This rather long duration is chosen because participants should not experience a significant time pressure. The main goal is to isolate the colour effect; a potential time pressure effect is not the focus of the research since time has an impact on the decision quality \citep{Hahn2006}. A time limitation, however, must be implemented to ensure that it is necessary to play the round in one sitting (refer to subsection  \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}).
 The \textit{Next} button is available to give participants the opportunity to skip the current round when they have already reached a personally satisfying result and do not want to wait for the round to be finished.
 \paragraph{Round}
 Participants must complete three rounds. Multiple rounds are chosen to identify a potential learning effect; the limitation to three rounds keeps the total time for the experiment to a level that is attractive for an \ac{AMT} experiment. 
@@ -201,8 +201,8 @@ To ensure that participants would not only hit the \textit{Next}-button in each 
 \end{center}
 \end{figure} 
 
-The reason for choosing a bonus system is due to one goal of the experiment to get participants to compare boxes of different weights and benefits and to make  them try different combinations for the knapsack.
-In order to incentivize such behaviour, a bonus system can help. Trial rounds show that getting up to 80\% is possible when participants make an effort and try out different solutions. Hence, the performance incentive starts at 80\% and offers the participants in the first Trial an additional bonus of up to \$0.10 when reaching 100\%, resulting in a potential total payout of \$0.15 per round. Nevertheless, the experience of the first Trial shows a large number of participants who did not reach the bonus bar. Therefore, we increased the leverage of the bonus system, from a ground payment of \$0.01 to a possible total payout of \$0.21 when reaching 100\%.
+The reason for choosing a bonus system is to get participants to compare boxes of different weights and benefits and to make  them try different combinations for the knapsack.
+In order to incentivize such behaviour, a bonus system can help. Trial rounds show that getting up to 80\% is possible when participants make an effort and try out different solutions. Hence, the performance incentive starts at 80\% and offers the participants in the first Trial an additional bonus of up to \$0.10 when reaching 100\%, resulting in a potential total payout of \$0.15 per round. Nevertheless, the experience of Trial 1 shows a large number of participants who did not reach the bonus bar. Therefore, we increased the leverage of the bonus system in Trial 2, from a ground payment of \$0.01 to a possible total payout of \$0.21 when reaching 100\%.
 
 %% ===========================
 \section{Online Implementation}
@@ -214,8 +214,8 @@ The experiment is advertised on \acf{AMT} as a \ac{HIT}.
 
 \subsection{\acl{AMT}}
 \label{ch:Experiment:sec:OnlineImplementation:subsec:AMT}
-A previous research study\citep{Schmidt2012} using a similar interface and setup reached 28 participants. While the results helped to prove that more colours to choose from does not increase the average payout, the overall experiment lacked a wider statistical foundation.
-Consequently, we try to increase the statistical foundation by using the online labour market \acf{AMT}.
+A previous research study \citep{Schmidt2012} using a similar interface and setup reached 28 participants. While the results helped to prove that more colours to choose from does not increase the average payout, the overall experiment lacked a wider statistical foundation.
+Consequently, we try to increase the foundation by using the online labour market \acf{AMT}.
 
 The \ac{AMT} platform is the most active online labour market for conducting behavioural experiments. It enables researchers to conduct experiments very quickly, cheaply \citep{Rand2012}, and in good quality \citep{Gardner2012}. Moreover, the data gained is at least as reliable as the data obtained via traditional methods \citep{Buhrmester2011}. \ac{AMT} connects employers with potential workers who are paid according to the satisfactory completion of the assigned task. Furthermore, workers can be motivated to perform well by a bonus structure. Since individuals can participate entirely over the computer, the experience is quite similar to participating in computer simulations.
 
@@ -226,7 +226,7 @@ Although the \ac{AMT} offers an enormous potential for the purposes of our study
 
 First, in contrast to experiments conducted in a lab environment, \ac{AMT} experiments have limited control over what kind of individuals take part in the experiment. In particular, the lack of control over \textit{non-random attrition} \citep{Rand2012} defines a limitation for our experiment in terms of the participant structure. Individuals who are overwhelmed with the complexity of the task might drop out early, not finish the \ac{HIT} and may not be included in the statistical analysis. This can have an impact on the pool of participants among different treatments and can therefore limit our ability to compare results. As a result, we have tried to make the description of the game and the game itself as simple and intuitive as possible in order to reduce the risk of early drop-outs. Trial runs previous to offering the \ac{HIT} revealed that using the Trial round helped individuals to get a better understanding of the game and the task.
 
-Second, researchers cannot be sure as to what participants are actually doing during the experiment on the \ac{AMT} platform. This fact especially reduces the benefit to cognitive load experiments similar to our experiment since our experiment necessitates the full attention each individual. We try to tackle this issue by setting a time restriction per round so individuals have an incentive to stay on task. Moreover, we log the time that individuals spend on different parts of the experiment and evaluate the participant's actions by analysing the recorded data in order to fully understand each individual's actions. Last, we take this limitation into consideration in the choice of a statistical model.
+Second, researchers cannot be sure what participants are actually doing during the experiment on the \ac{AMT} platform. This fact especially reduces the benefit to cognitive load experiments similar to our experiment since our experiment necessitates the full attention of each individual. We try to tackle this issue by setting a time restriction per round so individuals have an incentive to stay on task. Moreover, we log the time that individuals spend on different parts of the experiment and evaluate the participant's actions by analysing the recorded data. We are therefore able to better understand each individual's actions. Last, we take this limitation into consideration in the choice of a statistical model.
 
 Third, the statistical analysis is based on the assumptions that every observation is independent. In the setup of our experiment, individuals are able to conduct the experiment over and over by re-directing to the start page after finishing a session. Even though repeat responses appear to be a minor concern according to \cite{Berinsky2012}, it can still potentially dilute the observation independence and the statistical value of the learning effect. We therefore record the IP address of each user when they are directed to the welcome page in order to exclude those participants who play several games successively. However, this method does not exclude those individuals who change their IP in-between experiments.
 Moreover, the \ac{AMT} platform has other disadvantages against a lab experiment in terms of user support during the experiment, and the lack of control over the English language competencies of individuals. 
@@ -276,7 +276,7 @@ At the end, the data on the server is compared to the \ac{HIT}s completed, and t
 \label{ch:Experiment:sec:DataacquisitionDescriptives}
 %% ===========================
 The 1\textsuperscript{st} Trial was offered on \ac{AMT} between the 20\textsuperscript{th} and the 21\textsuperscript{st} of February 2013 and reached 200 participants, the 2\textsuperscript{nd} Trial with the same amount of participants ran between the 5\textsuperscript{th} and the 8\textsuperscript{th} of March 2013. A total of 31.291 actions were recorded on the server.\\
-Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{R}, the recorded data is cumulated on a per round basis for the purposes of this study. For each round per user, a data point is created that includes information on the user, treatment and corresponding number of colours, round, first result, best result, \textit{FinalResult} and finally the time for each result.
+Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{R}, the recorded data is cumulated on a per round basis for the purposes of this study. For each round per user, a data point is created that includes information on the user, treatment and corresponding number of colours, round, number of decisions, first result, best result, final result and finally the time for each result.
  \begin{figure}[htp] % Interface 1
 \begin{center} %Exemplary interface
   \includegraphics[height = 0.5\textwidth]{User_Waterfall.pdf}
@@ -284,8 +284,8 @@ Before the data is statistically analysed using IBM's \textbf{SPSS} and \textbf{
   \label{Data}
 \end{center}
 \end{figure}
-Out of a potential 1.200 rounds per 400 participants, there are 1257 played rounds recorded (refer to Figure \ref{Data}). The fact that the recorded number of rounds outnumbers the potential 1.200 rounds, can be explained using two cases. First the functionality test rounds conducted by the research team while the game was running and second by participants playing one or two rounds, then dropping out of the experiment. These cases can be identified by looking at the payout of the user, since there was no payout made to users who did not complete all rounds. Consequently, we will exclude the rounds of those users who did not achieve a payout greater than 0.\\
-The next step is to identify the users who played the game again and again, and therefore have skewed the observation independence as described in Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}. 32 users are found who share both their IP with at least one other user and who achieved a payout greater than 0. The payout filter does not exclude those users who committed only once to the experiment and therefore only reached a payout greater than 0 once. \\
+Out of a potential 1.200 rounds per 400 participants, there are 1257 played rounds recorded (refer to Figure \ref{Data}). The fact that the recorded number of rounds outnumbers the potential 1.200 rounds, can be explained using two cases: first by the functionality test rounds conducted by the research team while the game was running and second by participants playing one or two rounds, then dropping out of the experiment. These cases can be identified by looking at the payout of the user, since there was no payout made to users who did not complete all rounds. Consequently, we will exclude the rounds of those users who did not achieve a payout greater than 0.\\
+The next step is to identify the users who played the game again and again, and therefore have skewed the observation independence as described in Section \ref{ch:Experiment:sec:OnlineImplementation:subsec:AMT}. 32 users are found who share both their IP with at least one other user and who achieved a payout greater than 0. We do not exclude those users who committed only once to the experiment and therefore only reached a payout greater than 0 once. \\
 The data of 6 participants showed errors, e.g. a total game time per round greater than 100s or a result greater than 100\%. Since we were not able to trace the origin of these errors, we will exclude these users from the data set.
 As a result, 349 users with a total of 1.046 rounds build the data for the statistical analysis.\\
 Within the data used for the analysis, there are two further filters applied.
@@ -368,7 +368,7 @@ The distribution of the payout presented in Figure \ref{Distributionofpayout} sh
 \label{ch:Evaluation:sec:DescriptiveStatistics:subsec:Performance}
 The characteristics of the histograms for all result types show a similar shape\footnote{Figure \ref{DistributionFinalResult} (left) shows the histogram for the \textit{FinalResult}, see Appendix \ref{Appendix-Descriptive} for Histograms and Boxplots for \textit{FirstResult} and \textit{BestResult}.}. The average result lies between 75\% for the \textit{FirstResult} and 79\% for the \textit{BestResult}. The relative standard deviation is high with values greater than 23\%, and the standard deviation is just below 20. 
 The population for all result types are negatively skewed with a value between --1.29 and --1.58, and the kurtosis is positive in the range of 1.4 to 2.4. The modal group can be found between 85\% and 95\%.\\
-As indicated by the histograms, there is a lot of noise in the data, where values below 80\% are likely to be related to a minimum effort. Therefore, the statistical potential is emphasized by excluding the low performers.
+As indicated by the histograms, there is a lot of noise in the data, since values below 80\% are likely to be related to a minimum effort. Therefore, the statistical potential is emphasized by excluding the low performers.
 The distribution of the different result types among different treatments is exemplary shown in Figure \ref{DistributionFinalResult} (right) for the \textit{FinalResult} and indicates a decreasing interquartile range with an increasing number of colours. The medians for all treatments are above the bonus bar and show a tendency to form a U-Shape with a peak at the treatment with three colours.\\
 \begin{figure}[htbp] % DistributionFinalResult
 \begin{center} 
@@ -394,7 +394,7 @@ The interquartile range is similar among all treatments for the \textit{BestTime
 
 
 \paragraph{Decision time and number}
-The box plots for \textit{DecisionTime} show a wide range, from below 0 seconds to up to 6 seconds for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants clicked between 5 and 40 times on boxes per round. The box plot for \textit{DecisionNumber} shows outliers for every treatment, resulting in a range of less than 10 clicks up until 90 clicks per round.
+The box plots for \textit{DecisionTime} show a wide range, from below 0 seconds to up to 6 seconds for all treatments. The medians are similar and treatment 3 has a wider interquartile range. The majority of participants clicked between 5 and 40 times on boxes per round. The box plot for \textit{DecisionNumber} shows outliers for every treatment, resulting in a range of less than 10 clicks up until 130 clicks per round.
 
 \begin{figure}[htbp] % DistributionDecisionNumber
 \begin{center} 
@@ -435,7 +435,7 @@ The box size (1) is favoured by only a small minority of participants, and other
 % ===============================
 \paragraph{Correlation of variables}
 Figure \ref{Correlation} illustrates the correlation between all the variables. The bigger the size of the circles, the greater the magnitude of the correlation. The green colour represents a positive correlation and the red colour represents a negative linear correlation, so big green circles refer to a high positive linear correlation.\\
-The two main correlation groups can be identified as the different result and time types and they both show a high correlation. The correlation between these two groups is smaller than within the groups, but is still positive. This result indicates that the more time a participant takes for completing the round, the more successful he or she will be, and vice versa.\\
+The two main correlation groups can be identified as the different result and time types since they both show a high correlation. The correlation between these two groups is smaller than within the groups, but is still positive. This result indicates that the more time a participant takes for completing the round, the more successful he or she will be, and vice versa.\\
 The linear correlation between the time and result variables, and the independent variables \textit{Round} and \textit{NumberOfColours}, is only small, yet the \textit{DecisionTime} shows a higher positive correlation for the \textit{NumberOfColours} and a more negative correlation for \textit{Round}. In other words, the more colours that are added to the game, the more time it takes the participant, on average, to make a decision, and the decision time decreases over the rounds played.\\
 The \textit{DecisionNumber} is positively correlated to the result and time variables, showing the highest correlation value for \textit{FinalTime} and \textit{BestTime}.
 

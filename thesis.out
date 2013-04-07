@@ -22,15 +22,14 @@
 \BOOKMARK [1][-]{section.4.2}{4.2 Non-Parametric Statistical Tests \(NP\)}{chapter.4}% 22
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Tests of Independent samples: NumberOfColours \046 Trial}{section.4.2}% 23
 \BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Tests of dependent samples: Round}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Conclusion}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Implications for parameter estimations}{section.4.2}% 25
 \BOOKMARK [1][-]{section.4.3}{4.3 Linear Mixed Model \(LMM\)}{chapter.4}% 26
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Choice of a LMM model}{section.4.3}% 27
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Implementation in R}{section.4.3}% 28
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Results for the LMM}{section.4.3}% 29
-\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 30
-\BOOKMARK [0][]{chapter.6}{6 Declaration}{}% 31
-\BOOKMARK [0][]{chapter*.39}{Appendix}{}% 32
-\BOOKMARK [1][-]{section.6.1}{A Algorithm}{chapter*.39}% 33
-\BOOKMARK [1][-]{section.6.2}{B Formulas}{chapter*.39}% 34
-\BOOKMARK [1][-]{section.6.3}{C Descriptive statistics}{chapter*.39}% 35
-\BOOKMARK [0][]{section*.40}{Bibliography}{}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Results for the LMM}{section.4.3}% 28
+\BOOKMARK [0][]{chapter.5}{5 Conclusion}{}% 29
+\BOOKMARK [0][]{chapter.6}{6 Declaration}{}% 30
+\BOOKMARK [0][]{chapter*.40}{Appendix}{}% 31
+\BOOKMARK [1][-]{section.6.1}{A Algorithm}{chapter*.40}% 32
+\BOOKMARK [1][-]{section.6.2}{B Formulas}{chapter*.40}% 33
+\BOOKMARK [1][-]{section.6.3}{C Descriptive statistics}{chapter*.40}% 34
+\BOOKMARK [0][]{section*.41}{Bibliography}{}% 35
