@@ -203,7 +203,7 @@ Subsequently, a \acf{LMM} is used to give parameter estimations to the combinati
 \label{ch:Evaluation:sec:Non-parametrictest}
 %% ===============================
 
-\acl{NP}s are statistical models that do not specify restrictive conditions \citep{Siegel1957}. As a result, \ac{NP} only make minimal assumptions regarding the underlying distribution of the data, so they do not require the data to be normally distributed. Furthermore, the tests rank the values instead of looking at the values themselves which makes them robust against outliers.\\
+\acl{NP} are statistical models that do not specify restrictive conditions \citep{Siegel1957}. As a result, \ac{NP} only make minimal assumptions regarding the underlying distribution of the data, so they do not require the data to be normally distributed. Furthermore, the tests rank the values instead of looking at the values themselves which makes them robust against outliers.\\
 Two different categories of tests are used; an independent-samples test, analysing the dependent variables that are grouped by \textit{NumberOfColours} and \textit{Trial}; and a test for related samples, comparing \textit{Rounds} for the same set of users. 
 
 \subsection{Tests of Independent samples: \textit{NumberOfColours} \& \textit{Trial}}
@@ -366,7 +366,8 @@ The results for the fixed effects of the \ac{LMM} can be interpreted in the same
 
 \paragraph{Filter 1: Users with \textit{BestResult} $\geq$ 80\% for each round}
 \textbf{\textit{NumberOfColours} }\\
-The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}.  Moreover, they all have significant parameter estimations for all parameters. So the hypothesis that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours} is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a polynomial relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}.
+The \ac{LMM} returns significant results for the \textit{FirstResult}, the \textit{DecisionTime} and the \textit{DecisionNumber}.  Moreover, the parameters of \textit{FirstResult}  and \textit{DecisionTime} are all significant, \textit{DecisionNumber} has significant parameters with the exception of quadratic parameter that is only significant on the 0.1 level. \\
+Consequently, the hypothesis that there is an \textbf{$\cap$}-relation between the performance of a participant and the \textit{NumberOfColours} is only supported for the \textit{FirstResult}. In addition, the results for \textit{DecisionTime} and \textit{DecisionNumber} show a quadratic relation with \textit{NumberOfColours}, as expected by the hypothesis. The \textit{DecisionTime} reaches its maximum and the \textit{DecisionNumber} its minimum for a medium level of information granularity. No significant results are signalized for the \textit{First-}, \textit{Best-}, and \textit{FinalTime}.
 
 \afterpage{
 \begin{landscape}
@@ -555,6 +556,24 @@ $\sigma$: Residual         &    4.77    &     3.17    &    3.43    & 0.49 & 5.33
 \end{table}
 
 
+\begin{table}[htbp] % Usergroup and Hypotheses
+  \centering
+  \caption{Overview: Accepted and Rejected Hypotheses}
+  \label{tab:HypothesesEvalutation}
+    \begin{tabular}{cc|rrr}
+    \toprule
+    \textbf{Treatment} & \textbf{\# Colours} & \multicolumn{3}{c}{\textbf{Hypotheses}} \\
+    \midrule
+    \textbf{1} & 2     &  & \multicolumn{1}{l}{H1a-c: } & \multicolumn{1}{l}{Treatment 1+2 < 3 > 4+5} \\
+    \textbf{2} & 3     &       & \multicolumn{1}{l}{H2: } & \multicolumn{1}{l}{Treatment 1+2 < 3 > 4+5} \\
+    \textbf{3} & 7    &    &  \multicolumn{1}{l}{H3: } & \multicolumn{1}{l}{Treatment 1+2 > 3 < 4+5} \\
+    \textbf{4} & 11    &    &  \multicolumn{1}{l}{H4a-c: } & \multicolumn{1}{l}{Round 1 < 2 < 3} \\
+    \textbf{5} &  15	   &    &  \multicolumn{1}{l}{H5: } & \multicolumn{1}{l}{Round 1 > 2 > 3} \\
+     & 		&    &  \multicolumn{1}{l}{H6: } & \multicolumn{1}{l}{Round 1 > 2 > 3} \\
+     & 		&    &  \multicolumn{1}{l}{H7a-c: } & \multicolumn{1}{l}{Round 1 > 2 > 3} \\
+    \bottomrule
+    \end{tabular}%
+\end{table}%
 
 %%% ===============================
 %\section{Hypotheses Test}

@@ -54,16 +54,16 @@
 \contentsline {subsection}{\numberline {4.3.2}Results for the \ac {LMM}}{31}{subsection.4.3.2}
 \contentsline {paragraph}{Filter 1: Users with \textit {BestResult} $\geq $ 80\% for each round}{31}{section*.32}
 \contentsline {paragraph}{Filter 2: Filter 1 + \textit {NumberOfColours} $\geq $ 7}{33}{section*.33}
-\contentsline {chapter}{\numberline {5}Conclusion}{35}{chapter.5}
-\contentsline {paragraph}{\acf {AMT} and the quality of data}{35}{section*.34}
-\contentsline {paragraph}{The \textit {FirstResult} is the best on a medium level of information granularity, \textit {DecisionTime} shows a maximum and \textit {DecisionNumber} a minimum on the medium level}{35}{section*.35}
-\contentsline {paragraph}{Learning Effect has an influence on both the performance and the game time}{36}{section*.36}
-\contentsline {paragraph}{Individual characteristics affect the performance}{36}{section*.37}
-\contentsline {paragraph}{A higher leverage on the bonus does not improve performances.}{37}{section*.38}
-\contentsline {paragraph}{Limitations of the experiment}{37}{section*.39}
-\contentsline {chapter}{\numberline {6}Declaration}{38}{chapter.6}
-\contentsline {chapter}{Appendix}{39}{chapter*.40}
-\contentsline {section}{\numberline {A}Algorithm}{39}{section.6.1}
-\contentsline {section}{\numberline {B}Formulas}{40}{section.6.2}
-\contentsline {section}{\numberline {C}Descriptive statistics}{40}{section.6.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{36}{chapter.5}
+\contentsline {paragraph}{\acf {AMT} and the quality of data}{36}{section*.34}
+\contentsline {paragraph}{The \textit {FirstResult} is the best on a medium level of information granularity, \textit {DecisionTime} shows a maximum and \textit {DecisionNumber} a minimum on the medium level}{36}{section*.35}
+\contentsline {paragraph}{Learning Effect has an influence on both the performance and the game time}{37}{section*.36}
+\contentsline {paragraph}{Individual characteristics affect the performance}{38}{section*.37}
+\contentsline {paragraph}{A higher leverage on the bonus does not improve performances.}{38}{section*.38}
+\contentsline {paragraph}{Limitations of the experiment}{38}{section*.39}
+\contentsline {chapter}{\numberline {6}Declaration}{39}{chapter.6}
+\contentsline {chapter}{Appendix}{40}{chapter*.40}
+\contentsline {section}{\numberline {A}Algorithm}{40}{section.6.1}
+\contentsline {section}{\numberline {B}Formulas}{41}{section.6.2}
+\contentsline {section}{\numberline {C}Descriptive statistics}{41}{section.6.3}
 \contentsline {chapter}{Bibliography}{45}{section*.41}
